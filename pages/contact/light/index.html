@@ -71,7 +71,8 @@
       .header-div-7 {
         width: 56px;
         height: 56px;
-        background: #7d7d7d;
+
+        background: #bfbfbf;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -79,10 +80,14 @@
         justify-content: center;
       }
 
+      .header-div-7 img svg path {
+        fill: #000000 !important;
+      }
+
       .header-div-8 {
         width: 56px;
         height: 56px;
-        background: linear-gradient(180deg, #ffffff 0%, #bfbfbf 100%);
+        background: #1f1f1f;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -105,7 +110,7 @@
       .header-input-1 {
         border: none;
         outline: none;
-        background: #515151;
+        background: #f1f1f1;
         color: #c1c1c1;
         border-radius: 5px;
         width: 316px;
@@ -117,7 +122,7 @@
       }
 
       .header-img-1 {
-        background: #ffffff;
+        background: #141414;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -134,6 +139,7 @@
         font-weight: 400;
         font-size: 22px;
         font-family: Sarbaz, serif;
+        color: #141414;
       }
 
       .header-ul-1 {
@@ -145,12 +151,13 @@
       }
 
       .header-ul-1 a {
-        color: #ffffff;
+        color: #141414;
+        font-weight: 500;
         text-decoration: none;
       }
 
       .header-ul-1 a:hover {
-        color: #ffffff;
+        color: #141414;
       }
 
       .header-ul-1 .active a {
@@ -162,7 +169,7 @@
       }
 
       body {
-        background-color: #2a2a2a !important;
+        background-color: #e8e8e8 !important;
         font-family: YekanBakh, VazirFd, Poppins, serif !important;
         direction: rtl;
       }
@@ -176,12 +183,12 @@
         display: none;
       }
 
-      .contact-dark-img-1 {
+      .contact-light-img-1 {
         position: absolute;
         left: 0;
         top: 100px;
       }
-      .contact-dark-img-2 {
+      .contact-light-img-2 {
         position: absolute;
         right: -60px;
         transform: rotate(180deg);
@@ -189,23 +196,24 @@
         height: 400px;
       }
 
-      .contact-dark-first-sectoin {
+      .contact-light-first-sectoin {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        color: #ffffff;
+        color: #292d32;
         row-gap: 24px;
         margin-bottom: 50px;
       }
 
-      .contact-dark-first-section-span-1 {
+      .contact-light-first-section-span-1 {
         font-size: 40px;
         font-weight: 950;
       }
-      .contact-dark-first-section-span-2 {
+      .contact-light-first-section-span-2 {
         font-weight: 400;
         font-size: 22px;
+        color: #8a929b;
       }
 
       @media screen and (max-width: 992px) {
@@ -340,11 +348,11 @@
   </head>
   <body>
     <header>
-      <img class="header-img-2" src="../../../src/assets/images/image1.png" />
+      <img class="header-img-2" src="../../../src/assets/images/image22.png" />
       <div class="header-div-1">
         <div class="header-div-3">
           <div
-            class="offcanvas offcanvas-end header-offcanvas"
+            class="offcanvas offcanvas-end header-offcanvas-light"
             tabindex="-1"
             id="offcanvasMenu"
           >
@@ -359,7 +367,7 @@
             />
             <img
               class="header-img-5"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <img
@@ -369,65 +377,101 @@
               <span class="header-span-1">میکسـرچـی</span>
             </div>
             <div class="header-div-10">
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/category.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/category.svg"
+                />
                 <span>دستـه بنـدی</span>
               </div>
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/brand.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/brand.svg"
+                />
                 <span>برنـدهـا</span>
               </div>
             </div>
             <div class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -438,6 +482,10 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasMenu"
             src="../../../src/assets/icons/menu.svg"
+            style="
+              filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                brightness(95%) contrast(100%);
+            "
           />
           <img
             class="header-img-1"
@@ -446,18 +494,24 @@
           <span class="header-span-1">میکسـرچـی</span>
         </div>
         <div class="header-div-4">
-          <a href="../light/index.html" class="header-div-8">
-            <img src="../../../src/assets/icons/light.svg" />
+          <a href="../dark/index.html" class="header-div-8">
+            <img src="../../../src/assets/icons/moon.svg" />
           </a>
           <div
             class="header-div-7"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasBrandsMenu"
           >
-            <img src="../../../src/assets/icons/brand.svg" />
+            <img
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(95%) contrast(100%);
+              "
+              src="../../../src/assets/icons/brand.svg"
+            />
           </div>
           <div
-            class="offcanvas offcanvas-start header-offcanvas-2"
+            class="offcanvas offcanvas-start header-offcanvas-2-light"
             tabindex="-1"
             id="offcanvasBrandsMenu"
           >
@@ -472,7 +526,7 @@
             />
             <img
               class="header-img-9"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <span class="header-span-1">Brands</span>
@@ -480,54 +534,78 @@
 
             <div style="margin-top: 100px" class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -542,23 +620,23 @@
       <div class="header-div-2">
         <ul class="header-ul-1">
           <li>
-            <a href="../../home/dark/index.html"> صفحه اصلی </a>
+            <a href="../../home/light/index.html"> صفحه اصلی </a>
           </li>
           <li>
-            <a href="../../product/dark/index.html"> محصولات </a>
+            <a href="../../product/light/index.html"> محصولات </a>
           </li>
           <li>
-            <a href="../../category/dark/index.html"> دسته بندی ها </a>
+            <a href="../../category/light/index.html"> دسته بندی ها </a>
           </li>
         </ul>
         <ul class="header-ul-1">
           <li>
-            <a href="../../favorite/dark/index.html" href="./">
+            <a href="../../favorite/light/index.html" href="./">
               علاقه مندی ها
             </a>
           </li>
           <li>
-            <a href="../../about/dark/index.html"> درباره ما </a>
+            <a href="../../about/light/index.html"> درباره ما </a>
           </li>
           <li class="active">
             <a href="./index.html"> تماس با ما </a>
@@ -568,117 +646,144 @@
     </header>
     <main>
       <img
-        class="contact-dark-img-1"
-        src="../../../src/assets/images/image20.png"
+        class="contact-light-img-1"
+        src="../../../src/assets/images/image36.png"
         alt=""
       />
       <img
-        class="contact-dark-img-2"
-        src="../../../src/assets/images/image20.png"
+        class="contact-light-img-2"
+        src="../../../src/assets/images/image36.png"
         alt=""
       />
-      <section class="contact-dark-first-sectoin">
-        <span class="contact-dark-first-section-span-1">تمـاس بـا مـا</span>
-        <span class="contact-dark-first-section-span-2"
+      <section class="contact-light-first-sectoin">
+        <span class="contact-light-first-section-span-1">تمـاس بـا مـا</span>
+        <span class="contact-light-first-section-span-2"
           >فـرم تمـاس با مـا شرکـت میکسـرچی</span
         >
       </section>
-      <section class="contact-dark-second-section">
-        <div class="contact-dark-second-section-div-1">
+      <section class="contact-light-second-section">
+        <div class="contact-light-second-section-div-1">
           <img
-            class="contact-dark-second-section-img-3"
+            class="contact-light-second-section-img-3"
             src="../../../src/assets/images/image14.png"
             alt=""
           />
-          <span class="contact-dark-second-section-span-2"> تماس با ما </span>
+          <span class="contact-light-second-section-span-2"> تماس با ما </span>
         </div>
-        <div class="contact-dark-second-section-div-7">
-          <div class="contact-dark-second-section-div-8">
-            <span class="contact-dark-label">آدرس شرکت</span>
-            <div class="contact-dark-second-section-div-10">
+        <div class="contact-light-second-section-div-7">
+          <div class="contact-light-second-section-div-8">
+            <span class="contact-light-label">آدرس شرکت</span>
+            <div class="contact-light-second-section-div-10">
               <span>تهران، میدان ولیعصر، کوچه فرشید، پلاک ۱۰ </span>
               <img src="../../../src/assets/icons/map-marker-alt.svg" />
             </div>
-            <span class="contact-dark-label">تلفن تماس</span>
-            <div class="contact-dark-second-section-div-10">
-              <span class="contact-dark-number-container">
-                <span class="contact-dark-number">
+            <span class="contact-light-label">تلفن تماس</span>
+            <div class="contact-light-second-section-div-10">
+              <span class="contact-light-number-container">
+                <span class="contact-light-number">
                   88852013
                   <span>21</span>
                 </span>
                 -
-                <span class="contact-dark-number">
+                <span class="contact-light-number">
                   88852014
                   <span>21</span>
                 </span>
               </span>
               <img
-                class="contact-dark-second-section-img-1"
+                class="contact-light-second-section-img-1"
                 src="../../../src/assets/icons/phone.svg"
               />
             </div>
-            <span class="contact-dark-label">پست الکترونیک</span>
-            <div class="contact-dark-second-section-div-10">
+            <span class="contact-light-label">پست الکترونیک</span>
+            <div class="contact-light-second-section-div-10">
               <span> info@1xmarket.com </span>
               <img src="../../../src/assets/icons/envelope.svg" />
             </div>
-            <div class="contact-dark-second-section-div-11">
+            <div class="contact-light-second-section-div-11">
               <img
-                class="contact-dark-second-section-img-2"
+                class="contact-light-second-section-img-2"
                 src="../../../src/assets/images/image31.png"
                 alt=""
               />
             </div>
           </div>
-          <div class="contact-dark-second-section-div-2">
-            <span class="contact-dark-label">نام و نام خانوادگی</span>
-            <div class="contact-dark-second-section-div-9">
-              <img src="../../../src/assets/icons/user.svg" alt="" />
+          <div class="contact-light-second-section-div-2">
+            <span class="contact-light-label">نام و نام خانوادگی</span>
+            <div class="contact-light-second-section-div-9">
+              <img
+                style="
+                  filter: invert(100%) sepia(100%) saturate(6%)
+                    hue-rotate(239deg) brightness(5%) contrast(100%);
+                "
+                src="../../../src/assets/icons/user.svg"
+                alt=""
+              />
               <input />
             </div>
-            <span class="contact-dark-label">پست الکترونیکی</span>
-            <div class="contact-dark-second-section-div-9">
-              <img src="../../../src/assets/icons/sms.svg" alt="" />
+            <span class="contact-light-label">پست الکترونیکی</span>
+            <div class="contact-light-second-section-div-9">
+              <img
+                style="
+                  filter: invert(100%) sepia(100%) saturate(6%)
+                    hue-rotate(239deg) brightness(5%) contrast(100%);
+                "
+                src="../../../src/assets/icons/sms.svg"
+                alt=""
+              />
               <input />
             </div>
-            <span class="contact-dark-label">موضوع</span>
-            <div class="contact-dark-second-section-div-9">
-              <img src="../../../src/assets/icons/messages.svg" alt="" />
+            <span class="contact-light-label">موضوع</span>
+            <div class="contact-light-second-section-div-9">
+              <img
+                style="
+                  filter: invert(100%) sepia(100%) saturate(6%)
+                    hue-rotate(239deg) brightness(5%) contrast(100%);
+                "
+                src="../../../src/assets/icons/messages.svg"
+                alt=""
+              />
               <input />
             </div>
-            <span class="contact-dark-label">متن پیام</span>
-            <div class="contact-dark-second-section-div-9">
+            <span class="contact-light-label">متن پیام</span>
+            <div class="contact-light-second-section-div-9">
               <textarea rows="8"></textarea>
             </div>
-            <button class="contact-dark-second-section-button-2">
+            <button class="contact-light-second-section-button-2">
               ارسال پیام
             </button>
           </div>
         </div>
       </section>
-      <section class="contact-dark-third-section">
-        <div class="contact-dark-third-section-div-1">
-          <span class="contact-dark-third-section-span-1">
+      <section class="contact-light-third-section">
+        <div class="contact-light-third-section-div-1">
+          <span class="contact-light-third-section-span-1">
             سوالات متداول
             <span></span>
           </span>
-          <span class="contact-dark-third-section-span-2"
+          <span class="contact-light-third-section-span-2"
             >برخی از سوالاتی که ممکن است برای شما پیش آید</span
           >
         </div>
-        <div class="contact-dark-third-section-div-2">
+        <div class="contact-light-third-section-div-2">
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample1"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >کالای خریداری شده را چطور میتوانم مرجوع کنم ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample1"
           >
             <div></div>
@@ -690,17 +795,23 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample2"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >کالای خریداری شده را چطور میتوانم مرجوع کنم ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample2"
           >
             <div></div>
@@ -712,17 +823,23 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample3"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >چطور درخواست خود را جهت مرجوعی کالا به شما اطلاع دهم؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample3"
           >
             <div></div>
@@ -734,18 +851,24 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample4"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >آیا می توانم هزینه کالا را هنگام تحویل کالا و در محل پرداخت نمایم
               ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample4"
           >
             <div></div>
@@ -757,17 +880,23 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample5"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >چطور می توانم مبلغ کالای مرجوع شده را دریافت کنم ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample5"
           >
             <div></div>
@@ -779,17 +908,23 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample6"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >مدت زمان جهت تحویل کالای خریداری شده چقدر است ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample6"
           >
             <div></div>
@@ -801,17 +936,23 @@
             فراوان
           </div>
           <div
-            class="contact-dark-third-section-div-3"
+            class="contact-light-third-section-div-3"
             data-bs-toggle="collapse"
             href="#collapseExample7"
           >
-            <span class="contact-dark-third-section-span-3"
+            <span class="contact-light-third-section-span-3"
               >چگونه می توانم پیام خود را ارسال کنم ؟</span
             >
-            <img src="../../../src/assets/icons/arrow-down.svg" />
+            <img
+              src="../../../src/assets/icons/arrow-down.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
+            />
           </div>
           <div
-            class="contact-dark-third-section-div-4 collapse"
+            class="contact-light-third-section-div-4 collapse"
             id="collapseExample7"
           >
             <div></div>

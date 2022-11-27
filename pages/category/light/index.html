@@ -71,7 +71,8 @@
       .header-div-7 {
         width: 56px;
         height: 56px;
-        background: #7d7d7d;
+
+        background: #bfbfbf;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -79,10 +80,14 @@
         justify-content: center;
       }
 
+      .header-div-7 img svg path {
+        fill: #000000 !important;
+      }
+
       .header-div-8 {
         width: 56px;
         height: 56px;
-        background: linear-gradient(180deg, #ffffff 0%, #bfbfbf 100%);
+        background: #1f1f1f;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -105,7 +110,7 @@
       .header-input-1 {
         border: none;
         outline: none;
-        background: #515151;
+        background: #f1f1f1;
         color: #c1c1c1;
         border-radius: 5px;
         width: 316px;
@@ -117,7 +122,7 @@
       }
 
       .header-img-1 {
-        background: #ffffff;
+        background: #141414;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -134,6 +139,7 @@
         font-weight: 400;
         font-size: 22px;
         font-family: Sarbaz, serif;
+        color: #141414;
       }
 
       .header-ul-1 {
@@ -145,12 +151,13 @@
       }
 
       .header-ul-1 a {
-        color: #ffffff;
+        color: #141414;
+        font-weight: 500;
         text-decoration: none;
       }
 
       .header-ul-1 a:hover {
-        color: #ffffff;
+        color: #141414;
       }
 
       .header-ul-1 .active a {
@@ -162,7 +169,7 @@
       }
 
       body {
-        background-color: #2a2a2a !important;
+        background-color: #e8e8e8 !important;
         font-family: YekanBakh, VazirFd, Poppins, serif !important;
         direction: rtl;
       }
@@ -175,9 +182,9 @@
         display: none;
       }
 
-      .category-dark-first-section {
-        background: #686868;
-        color: #ffffff;
+      .category-light-first-section {
+        background: #ffffff;
+        color: #2c2c2c;
         box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
         border-radius: 18px;
         padding: 30px 56px 45px;
@@ -188,17 +195,17 @@
         position: relative;
       }
 
-      .category-dark-first-section p {
+      .category-light-first-section p {
         font-size: 17px;
         line-height: 52px;
       }
 
-      .category-dark-first-section span {
+      .category-light-first-section span {
         font-weight: 700;
         font-size: 22px;
       }
 
-      .category-dark-first-section img {
+      .category-light-first-section img {
         top: 0;
         right: 24px;
         position: absolute;
@@ -323,22 +330,22 @@
           display: block;
         }
 
-        .category-dark-first-section {
+        .category-light-first-section {
           align-items: center;
           margin: 0 20px;
           padding: 30px;
         }
 
-        .category-dark-first-section p {
+        .category-light-first-section p {
           text-align: justify;
         }
 
-        .category-dark-first-section img {
+        .category-light-first-section img {
           right: calc(50% - 63px);
           width: 126px;
         }
 
-        .category-dark-first-section span {
+        .category-light-first-section span {
           border-bottom: 2px dashed #ebebeb;
           padding: 0 0 25px;
           width: 100%;
@@ -354,11 +361,11 @@
   </head>
   <body>
     <header>
-      <img class="header-img-2" src="../../../src/assets/images/image1.png" />
+      <img class="header-img-2" src="../../../src/assets/images/image22.png" />
       <div class="header-div-1">
         <div class="header-div-3">
           <div
-            class="offcanvas offcanvas-end header-offcanvas"
+            class="offcanvas offcanvas-end header-offcanvas-light"
             tabindex="-1"
             id="offcanvasMenu"
           >
@@ -373,7 +380,7 @@
             />
             <img
               class="header-img-5"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <img
@@ -383,65 +390,101 @@
               <span class="header-span-1">میکسـرچـی</span>
             </div>
             <div class="header-div-10">
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/category.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/category.svg"
+                />
                 <span>دستـه بنـدی</span>
               </div>
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/brand.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/brand.svg"
+                />
                 <span>برنـدهـا</span>
               </div>
             </div>
             <div class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -452,6 +495,10 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasMenu"
             src="../../../src/assets/icons/menu.svg"
+            style="
+              filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                brightness(95%) contrast(100%);
+            "
           />
           <img
             class="header-img-1"
@@ -460,18 +507,24 @@
           <span class="header-span-1">میکسـرچـی</span>
         </div>
         <div class="header-div-4">
-          <a href="../light/index.html" class="header-div-8">
-            <img src="../../../src/assets/icons/light.svg" />
+          <a href="../dark/index.html" class="header-div-8">
+            <img src="../../../src/assets/icons/moon.svg" />
           </a>
           <div
             class="header-div-7"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasBrandsMenu"
           >
-            <img src="../../../src/assets/icons/brand.svg" />
+            <img
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(95%) contrast(100%);
+              "
+              src="../../../src/assets/icons/brand.svg"
+            />
           </div>
           <div
-            class="offcanvas offcanvas-start header-offcanvas-2"
+            class="offcanvas offcanvas-start header-offcanvas-2-light"
             tabindex="-1"
             id="offcanvasBrandsMenu"
           >
@@ -486,7 +539,7 @@
             />
             <img
               class="header-img-9"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <span class="header-span-1">Brands</span>
@@ -494,54 +547,78 @@
 
             <div style="margin-top: 100px" class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -556,10 +633,10 @@
       <div class="header-div-2">
         <ul class="header-ul-1">
           <li>
-            <a href="../../home/dark/index.html"> صفحه اصلی </a>
+            <a href="../../home/light/index.html"> صفحه اصلی </a>
           </li>
           <li>
-            <a href="../../product/dark/index.html"> محصولات </a>
+            <a href="../../product/light/index.html"> محصولات </a>
           </li>
           <li class="active">
             <a href="./index.html"> دسته بندی ها </a>
@@ -567,21 +644,21 @@
         </ul>
         <ul class="header-ul-1">
           <li>
-            <a href="../../favorite/dark/index.html" href="./">
+            <a href="../../favorite/light/index.html" href="./">
               علاقه مندی ها
             </a>
           </li>
           <li>
-            <a href="../../about/dark/index.html"> درباره ما </a>
+            <a href="../../about/light/index.html"> درباره ما </a>
           </li>
           <li>
-            <a href="../../contact/dark/index.html"> تماس با ما </a>
+            <a href="../../contact/light/index.html"> تماس با ما </a>
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="category-dark-first-section">
+      <section class="category-light-first-section">
         <img src="../../../src/assets/images/image14.png" alt="" />
         <span>میکسر نانوایی</span>
         <p>
@@ -593,168 +670,192 @@
         </p>
       </section>
 
-      <section class="category-dark-second-section">
-        <div class="category-dark-second-section-div-1">دستـه بنـدی</div>
-        <div class="category-dark-second-section-div-2">
-          <div class="category-dark-second-section-div-3">میکسـر قنـادی</div>
-          <div class="category-dark-second-section-div-3 active">
+      <section class="category-light-second-section">
+        <div class="category-light-second-section-div-1">دستـه بنـدی</div>
+        <div class="category-light-second-section-div-2">
+          <div class="category-light-second-section-div-3">میکسـر قنـادی</div>
+          <div class="category-light-second-section-div-3 active">
             میکسـر اسپیـرال
           </div>
-          <div class="category-dark-second-section-div-3">خمیـر گیـر</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-3">میکسـر نانوایـی</div>
-          <div class="category-dark-second-section-div-4"></div>
+          <div class="category-light-second-section-div-3">خمیـر گیـر</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="category-light-second-section-div-4"></div>
         </div>
       </section>
 
-      <section class="category-dark-third-section">
-        <div class="category-dark-third-section-div-1">
+      <section class="category-light-third-section">
+        <div class="category-light-third-section-div-1">
           <span>برند ها</span>
-          <button class="category-dark-third-section-button-1">
+          <button class="category-light-third-section-button-1">
             نمایش همه
           </button>
         </div>
-        <div class="category-dark-third-section-div-2">
-          <div class="category-dark-third-section-div-3">
+        <div class="category-light-third-section-div-2">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-third-section-div-3">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-third-section-div-3">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-third-section-div-3">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-third-section-div-3">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-third-section-div-3">
+          <div class="category-light-third-section-div-3">
             <img
-              class="category-dark-third-section-img-1"
+              class="category-light-third-section-img-1"
               src="../../../src/assets/images/image4.png"
               alt=""
             />
-            <span class="category-dark-third-section-span-1">KICHOT</span>
-            <span class="category-dark-third-section-span-2"
+            <span class="category-light-third-section-span-1">KICHOT</span>
+            <span class="category-light-third-section-span-2"
               >میکسـر قنـادی</span
             >
             <img
-              class="category-dark-third-section-img-2"
+              class="category-light-third-section-img-2"
               src="../../../src/assets/images/image27.png"
               alt=""
             />
             <img
-              class="category-dark-third-section-img-3"
+              class="category-light-third-section-img-3"
               src="../../../src/assets/icons/eye.svg"
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(5%) contrast(100%);
+              "
               alt=""
             />
           </div>
-          <div class="category-dark-second-section-div-4"></div>
+          <div class="category-light-second-section-div-4"></div>
         </div>
       </section>
 
-      <section class="category-dark-forth-section container">
+      <section class="category-light-forth-section container">
         <div class="row">
           <div class="col-3 d-none d-lg-block">
-            <div class="category-dark-forth-section-div-11">
+            <div class="category-light-forth-section-div-11">
               <div
-                class="category-dark-forth-section-div-13"
+                class="category-light-forth-section-div-13"
                 data-bs-toggle="collapse"
                 aria-expanded="false"
                 aria-controls="category-1"
@@ -767,11 +868,11 @@
                 <img
                   src="../../../src/assets/icons/arrow-down.svg"
                   alt=""
-                  class="category-dark-forth-section-img-3"
+                  class="category-light-forth-section-img-3"
                 />
               </div>
               <div
-                class="category-dark-forth-section-div-14 collapse"
+                class="category-light-forth-section-div-14 collapse"
                 id="category-1"
               >
                 <ul>
@@ -788,21 +889,21 @@
                     KICHOT
                   </li>
                 </ul>
-                <div class="category-dark-forth-section-div-12">
-                  <button class="category-dark-forth-section-button-2">
-                    <span class="category-dark-forth-section-span-8">+</span>
+                <div class="category-light-forth-section-div-12">
+                  <button class="category-light-forth-section-button-2">
+                    <span class="category-light-forth-section-span-8">+</span>
                     KICHOT
                   </button>
-                  <button class="category-dark-forth-section-button-2">
-                    <span class="category-dark-forth-section-span-8">+</span>
+                  <button class="category-light-forth-section-button-2">
+                    <span class="category-light-forth-section-span-8">+</span>
                     KICHOT
                   </button>
                 </div>
               </div>
             </div>
-            <div class="category-dark-forth-section-div-11">
+            <div class="category-light-forth-section-div-11">
               <div
-                class="category-dark-forth-section-div-13"
+                class="category-light-forth-section-div-13"
                 data-bs-toggle="collapse"
                 aria-expanded="false"
                 aria-controls="category-2"
@@ -815,11 +916,11 @@
                 <img
                   src="../../../src/assets/icons/arrow-down.svg"
                   alt=""
-                  class="category-dark-forth-section-img-3"
+                  class="category-light-forth-section-img-3"
                 />
               </div>
               <div
-                class="category-dark-forth-section-div-14 collapse"
+                class="category-light-forth-section-div-14 collapse"
                 id="category-2"
               >
                 <ul>
@@ -840,9 +941,9 @@
                     فوق گران
                   </li>
                 </ul>
-                <div class="category-dark-forth-section-div-12">
-                  <button class="category-dark-forth-section-button-2">
-                    <span class="category-dark-forth-section-span-8">+</span>
+                <div class="category-light-forth-section-div-12">
+                  <button class="category-light-forth-section-button-2">
+                    <span class="category-light-forth-section-span-8">+</span>
                     اقتصادی
                   </button>
                 </div>
@@ -850,523 +951,661 @@
             </div>
           </div>
           <div class="col-md-12 col-lg-9">
-            <div class="category-dark-forth-section-div-15">
-              <div class="category-dark-forth-section-div-8">
-                <div class="category-dark-forth-section-div-10">
-                  <span class="category-dark-forth-section-span-6"
+            <div class="category-light-forth-section-div-15">
+              <div class="category-light-forth-section-div-8">
+                <div class="category-light-forth-section-div-10">
+                  <span class="category-light-forth-section-span-6"
                     >محصـولـات</span
                   >
-                  <span class="category-dark-forth-section-span-9">
-                    <img src="../../../src/assets/icons/setting-4.svg" />
+                  <span class="category-light-forth-section-span-9">
+                    <img
+                      src="../../../src/assets/icons/setting-4.svg"
+                      style="
+                        filter: invert(100%) sepia(100%) saturate(6%)
+                          hue-rotate(239deg) brightness(5%) contrast(100%);
+                      "
+                    />
                     فیلتر ها
                   </span>
-                  <div class="category-dark-forth-section-div-9">
-                    <span class="category-dark-forth-section-span-7"
+                  <div class="category-light-forth-section-div-9">
+                    <span class="category-light-forth-section-span-7"
                       >پیشفرض</span
                     >
-                    <span class="category-dark-forth-section-span-7 active"
+                    <span class="category-light-forth-section-span-7 active"
                       >جدیدترین ها</span
                     >
-                    <span class="category-dark-forth-section-span-7"
+                    <span class="category-light-forth-section-span-7"
                       >اقتصادی ترین</span
                     >
-                    <span class="category-dark-forth-section-span-7"
+                    <span class="category-light-forth-section-span-7"
                       >گران ترین</span
                     >
                   </div>
-                  <span class="category-dark-forth-section-span-10">
+                  <span class="category-light-forth-section-span-10">
                     <span> جدیدترین ها </span>
                     <img src="../../../src/assets/icons/arrow-down.svg" />
                   </span>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
                 </div>
               </div>
-              <div class="category-dark-forth-section-div-2">
-                <div class="category-dark-forth-section-div-3">
-                  <div class="category-dark-forth-section-div-4">
-                    <span class="category-dark-forth-section-span-1">$$</span>
-                    <span class="category-dark-forth-section-span-2">
-                      <img src="../../../src/assets/icons/heart.svg" alt="" />
+              <div class="category-light-forth-section-div-2">
+                <div class="category-light-forth-section-div-3">
+                  <div class="category-light-forth-section-div-4">
+                    <span class="category-light-forth-section-span-1">$$</span>
+                    <span class="category-light-forth-section-span-2">
+                      <img
+                        src="../../../src/assets/icons/heart.svg"
+                        alt=""
+                        style="
+                          filter: invert(100%) sepia(100%) saturate(6%)
+                            hue-rotate(239deg) brightness(5%) contrast(100%);
+                        "
+                      />
                     </span>
                   </div>
                   <img
-                    class="category-dark-forth-section-img-1"
+                    class="category-light-forth-section-img-1"
                     src="../../../src/assets/images/image5.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-2"
-                    src="../../../src/assets/images/image28.png"
+                    class="category-light-forth-section-img-2"
+                    src="../../../src/assets/images/image29.png"
                     alt=""
                   />
                   <img
-                    class="category-dark-forth-section-img-4"
+                    class="category-light-forth-section-img-4"
                     src="../../../src/assets/icons/eye.svg"
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
                     alt=""
                   />
-                  <div class="category-dark-forth-section-div-5">
-                    <span class="category-dark-forth-section-span-3"
+                  <div class="category-light-forth-section-div-5">
+                    <span class="category-light-forth-section-span-3"
                       >KICHOT</span
                     >
-                    <span class="category-dark-forth-section-span-4"
+                    <span class="category-light-forth-section-span-4"
                       >ظرفیت</span
                     >
                   </div>
-                  <div class="category-dark-forth-section-div-6">
-                    <span class="category-dark-forth-section-span-5"
+                  <div class="category-light-forth-section-div-6">
+                    <span class="category-light-forth-section-span-5"
                       >میکسـر قنـادی</span
                     >
-                    <button class="category-dark-forth-section-button-1">
+                    <button class="category-light-forth-section-button-1">
                       20 لیتر
                     </button>
                   </div>
@@ -1374,41 +1613,41 @@
               </div>
             </div>
           </div>
-          <div class="category-dark-forth-section-div-1 col-12">
-            <div class="category-dark-forth-section-div-7"><<</div>
-            <div class="category-dark-forth-section-div-7">1</div>
-            <div class="category-dark-forth-section-div-7 active">1</div>
-            <div class="category-dark-forth-section-div-7">1</div>
-            <div class="category-dark-forth-section-div-7">1</div>
-            <div class="category-dark-forth-section-div-7">>></div>
+          <div class="category-light-forth-section-div-1 col-12">
+            <div class="category-light-forth-section-div-7"><<</div>
+            <div class="category-light-forth-section-div-7">1</div>
+            <div class="category-light-forth-section-div-7 active">1</div>
+            <div class="category-light-forth-section-div-7">1</div>
+            <div class="category-light-forth-section-div-7">1</div>
+            <div class="category-light-forth-section-div-7">>></div>
           </div>
         </div>
       </section>
 
-      <section class="category-dark-fifth-section">
+      <section class="category-light-fifth-section">
         <img
-          class="category-dark-fifth-section-img-2"
+          class="category-light-fifth-section-img-2"
           src="../../../src/assets/images/image14.png"
           alt=""
         />
-        <div class="category-dark-fifth-section-div-1">
-          <span class="category-dark-fifth-section-span-1"
+        <div class="category-light-fifth-section-div-1">
+          <span class="category-light-fifth-section-span-1"
             >توضیحـات کامـل برنـد</span
           >
-          <div class="category-dark-fifth-section-div-2">
-            <button class="category-dark-fifth-section-button-1">
+          <div class="category-light-fifth-section-div-2">
+            <button class="category-light-fifth-section-button-1">
               <img src="../../../src/assets/icons/plus.svg" />
               کیفیت بالا
             </button>
-            <button class="category-dark-fifth-section-button-1">
+            <button class="category-light-fifth-section-button-1">
               <img src="../../../src/assets/icons/plus.svg" />
               باطری فوق العاده
             </button>
           </div>
         </div>
 
-        <div class="category-dark-fifth-section-div-3">
-          <p class="category-dark-fifth-section-p-1">
+        <div class="category-light-fifth-section-div-3">
+          <p class="category-light-fifth-section-p-1">
             لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
             استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
             ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
@@ -1422,18 +1661,18 @@
             درصد گذشته حال و آینده، شناخت فراوان جامعه و متخــصصان را میطلبد تا
             با نرم افزارها شناخت.
           </p>
-          <div class="category-dark-fifth-section-div-4">
-            <button class="category-dark-fifth-section-button-1">
+          <div class="category-light-fifth-section-div-4">
+            <button class="category-light-fifth-section-button-1">
               <img src="../../../src/assets/icons/plus.svg" />
               کیفیت بالا
             </button>
-            <button class="category-dark-fifth-section-button-1">
+            <button class="category-light-fifth-section-button-1">
               <img src="../../../src/assets/icons/plus.svg" />
               باطری فوق العاده
             </button>
           </div>
           <img
-            class="category-dark-fifth-section-img-1"
+            class="category-light-fifth-section-img-1"
             src="../../../src/assets/images/image3.png"
           />
         </div>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ابزار پرو - محصولات</title>
-    <style></style>
     <link
       rel="preload"
       href="../../../src/css/layout.min.css"
@@ -72,7 +71,8 @@
       .header-div-7 {
         width: 56px;
         height: 56px;
-        background: #7d7d7d;
+
+        background: #bfbfbf;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -80,10 +80,14 @@
         justify-content: center;
       }
 
+      .header-div-7 img svg path {
+        fill: #000000 !important;
+      }
+
       .header-div-8 {
         width: 56px;
         height: 56px;
-        background: linear-gradient(180deg, #ffffff 0%, #bfbfbf 100%);
+        background: #1f1f1f;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
         border-radius: 5px;
         display: flex;
@@ -106,7 +110,7 @@
       .header-input-1 {
         border: none;
         outline: none;
-        background: #515151;
+        background: #f1f1f1;
         color: #c1c1c1;
         border-radius: 5px;
         width: 316px;
@@ -118,7 +122,7 @@
       }
 
       .header-img-1 {
-        background: #ffffff;
+        background: #141414;
         border-radius: 50%;
         width: 60px;
         height: 60px;
@@ -135,6 +139,7 @@
         font-weight: 400;
         font-size: 22px;
         font-family: Sarbaz, serif;
+        color: #141414;
       }
 
       .header-ul-1 {
@@ -146,12 +151,13 @@
       }
 
       .header-ul-1 a {
-        color: #ffffff;
+        color: #141414;
+        font-weight: 500;
         text-decoration: none;
       }
 
       .header-ul-1 a:hover {
-        color: #ffffff;
+        color: #141414;
       }
 
       .header-ul-1 .active a {
@@ -163,7 +169,7 @@
       }
 
       body {
-        background-color: #2a2a2a !important;
+        background-color: #e8e8e8 !important;
         font-family: YekanBakh, Poppins, serif !important;
         direction: rtl;
       }
@@ -176,7 +182,7 @@
         display: none;
       }
 
-      .product-dark-first-section {
+      .product-light-first-section {
         display: flex;
         justify-content: space-around;
         align-items: stretch;
@@ -186,13 +192,13 @@
 
         padding: 30px 50px 30px 30px;
 
-        background: #121212;
-        color: #ffffff;
+        background: #ffffff;
+        color: #000000;
         box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
         border-radius: 18px;
       }
 
-      .product-dark-first-section-div-1 {
+      .product-light-first-section-div-1 {
         width: 348px;
         min-width: 348px;
         background: #e8e8e8;
@@ -203,18 +209,18 @@
         padding: 22px 40px 30px;
       }
 
-      .product-dark-first-section-div-2 {
+      .product-light-first-section-div-2 {
         display: flex;
         width: 100%;
         column-gap: 15px;
       }
 
-      .product-dark-first-section-img-2 {
+      .product-light-first-section-img-2 {
         width: 30%;
         flex-grow: 1;
       }
 
-      .product-dark-first-section-div-3 {
+      .product-light-first-section-div-3 {
         width: 422px;
         min-width: 422px;
         flex-grow: 1;
@@ -224,7 +230,7 @@
         justify-content: space-between;
       }
 
-      .product-dark-first-section-div-4 {
+      .product-light-first-section-div-4 {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -232,118 +238,118 @@
         padding-bottom: 18px;
       }
 
-      .product-dark-first-section-span-1 {
+      .product-light-first-section-span-1 {
         font-weight: 600;
         font-size: 22px;
         display: flex;
         column-gap: 16px;
       }
 
-      .product-dark-active {
+      .product-light-active {
         color: #00adb5;
       }
 
-      .product-dark-first-section-div-6 {
+      .product-light-first-section-div-6 {
         display: flex;
         align-items: center;
         column-gap: 4px;
       }
 
-      .product-dark-first-section-div-5 {
+      .product-light-first-section-div-5 {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         row-gap: 10px;
       }
 
-      .product-dark-first-section-div-7 {
+      .product-light-first-section-div-7 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 5px;
       }
 
-      .product-dark-first-section-div-8 {
+      .product-light-first-section-div-8 {
         display: flex;
         flex-direction: column;
         row-gap: 8px;
       }
 
-      .product-dark-first-section-div-10 {
+      .product-light-first-section-div-10 {
       }
 
-      .product-dark-first-section-div-10 .title {
+      .product-light-first-section-div-10 .title {
         font-weight: 700;
         font-size: 14px;
         margin-left: 20px;
       }
 
-      .product-dark-first-section-div-10 .title img {
+      .product-light-first-section-div-10 .title img {
         width: 16px;
         height: 16px;
         margin-left: 10px;
       }
 
-      .product-dark-first-section-div-10 .item {
+      .product-light-first-section-div-10 .item {
         font-weight: 500;
         font-size: 14px;
         color: #bfbfbf;
       }
 
-      .product-dark-first-section-div-10 .seperator {
+      .product-light-first-section-div-10 .seperator {
         margin: 0 10px;
       }
 
-      .product-dark-first-section-div-11 {
+      .product-light-first-section-div-11 {
         background: #ffffff;
         border-radius: 16px;
         padding: 16px;
       }
 
-      .product-dark-first-section-div-11 img {
+      .product-light-first-section-div-11 img {
         width: 22px;
         height: 22px;
       }
 
-      .product-dark-first-section-div-9 {
+      .product-light-first-section-div-9 {
         display: flex;
         align-items: center;
         column-gap: 45px;
-        background: #2a2a2a;
+        background: #e8e8e8;
         border-radius: 17px;
         padding: 12px 12px 12px 20px;
       }
 
-      .product-dark-first-section-div-12 {
+      .product-light-first-section-div-12 {
         display: flex;
         flex-direction: column;
       }
 
-      .product-dark-first-section-span-2 {
+      .product-light-first-section-span-2 {
         font-weight: 400;
         font-size: 10px;
       }
 
-      .product-dark-first-section-div-13 {
+      .product-light-first-section-div-13 {
         display: flex;
         flex-direction: column;
       }
 
-      .product-dark-first-section-span-3 {
+      .product-light-first-section-span-3 {
         font-weight: 900;
         font-size: 18px;
       }
 
-      .product-dark-first-section-p-1 {
+      .product-light-first-section-p-1 {
         font-weight: 500;
         font-size: 14px;
         line-height: 35px;
       }
 
-      .product-dark-first-section-div-14 {
+      .product-light-first-section-div-14 {
         width: 324px;
         min-width: 324px;
-        background: #2a2a2a;
+        background: #e8e8e8;
         border-radius: 12px;
         padding: 22px 22px 28px;
         position: relative;
@@ -353,20 +359,21 @@
         justify-content: space-between;
       }
 
-      .product-dark-first-section-div-15 {
+      .product-light-first-section-div-15 {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding-bottom: 30px;
-        border-bottom: 2px dashed #414141;
+        border-bottom: 2px dashed #d7d7d7;
       }
 
-      .product-dark-first-section-span-4 {
+      .product-light-first-section-span-4 {
         font-weight: 700;
         font-size: 16px;
+        color: #252525;
       }
 
-      .product-dark-first-section-button-1 {
+      .product-light-first-section-button-1 {
         border: none;
         outline: none;
         padding: 6px 26px 3px;
@@ -377,27 +384,28 @@
         border-radius: 8px;
       }
 
-      .product-dark-first-section-div-16 {
+      .product-light-first-section-div-16 {
         display: flex;
         flex-direction: column;
         padding-bottom: 56px;
-        border-bottom: 2px dashed #414141;
+        border-bottom: 2px dashed #d7d7d7;
       }
 
-      .product-dark-first-section-span-5 {
+      .product-light-first-section-span-5 {
         font-weight: 900;
         font-size: 16px;
+        color: #252525;
       }
 
-      .product-dark-first-section-span-6 {
+      .product-light-first-section-span-6 {
         font-weight: 400;
         font-size: 14px;
         color: #a8a8a8;
         margin-top: 4px;
       }
 
-      .product-dark-first-section-div-17 {
-        background: #464646;
+      .product-light-first-section-div-17 {
+        background: #ffffff;
         border-radius: 29px;
         width: 100%;
         height: 12px;
@@ -406,14 +414,14 @@
         margin-top: 45px;
       }
 
-      .product-dark-first-section-div-18 {
+      .product-light-first-section-div-18 {
         background: #8ed457;
         border-radius: 29px;
         width: 40%;
         height: 11px;
       }
 
-      .product-dark-first-section-div-19 {
+      .product-light-first-section-div-19 {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -421,32 +429,33 @@
         padding: 0 15px;
       }
 
-      .product-dark-first-section-div-19 .active {
+      .product-light-first-section-div-19 .active {
         color: #8ed457;
       }
 
-      .product-dark-first-section-span-7 {
+      .product-light-first-section-span-7 {
         font-weight: 500;
         font-size: 12px;
       }
 
-      .product-dark-first-section-div-20 {
+      .product-light-first-section-div-20 {
         display: flex;
         flex-direction: column;
         row-gap: 20px;
       }
 
-      .product-dark-first-section-div-21 {
+      .product-light-first-section-div-21 {
         display: flex;
         column-gap: 10px;
       }
 
-      .product-dark-first-section-span-8 {
+      .product-light-first-section-span-8 {
         font-weight: 900;
         font-size: 16px;
+        color: #252525;
       }
 
-      .product-dark-first-section-button-2 {
+      .product-light-first-section-button-2 {
         border: none;
         outline: none;
         background: #00adb5;
@@ -459,14 +468,14 @@
         position: relative;
       }
 
-      .product-dark-first-section-button-2 img {
+      .product-light-first-section-button-2 img {
         position: absolute;
         left: 15px;
         height: 20px;
         top: calc(50% - 10px);
       }
 
-      .product-dark-first-section-button-3 {
+      .product-light-first-section-button-3 {
         border: none;
         outline: none;
         background: #24cc63;
@@ -474,10 +483,25 @@
         padding: 10px;
       }
 
-      .product-dark-first-section-img-3 {
+      .product-light-first-section-img-3 {
         position: absolute;
         top: -30px;
         align-self: center;
+      }
+
+      .product-light-item,
+      .product-light-seperator {
+        color: #bfbfbf;
+      }
+
+      .product-light-title {
+        margin-left: 20px;
+      }
+
+      .product-light-first-section-div-22,
+      .product-light-first-section-img-4,
+      .product-light-first-section-img-5 {
+        display: none;
       }
 
       @media screen and (max-width: 992px) {
@@ -522,13 +546,13 @@
           padding: 50px 25px 120px;
         }
 
-        .product-dark-first-section {
+        .product-light-first-section {
           padding: 30px 20px;
         }
 
-        .product-dark-first-section-div-1,
-        .product-dark-first-section-div-3,
-        .product-dark-first-section-div-14 {
+        .product-light-first-section-div-1,
+        .product-light-first-section-div-3,
+        .product-light-first-section-div-14 {
           min-width: 0;
           width: 100%;
         }
@@ -623,24 +647,24 @@
           margin-top: -80px;
         }
 
-        .product-dark-first-section-div-1 {
+        .product-light-first-section-div-1 {
           border-radius: 0;
           padding-bottom: 70px;
           margin-top: -2px;
         }
 
-        .product-dark-first-section-div-5 img {
+        .product-light-first-section-div-5 img {
           display: none;
         }
 
-        .product-dark-first-section-div-6 img {
+        .product-light-first-section-div-6 img {
           display: block;
         }
-        .product-dark-first-section-div-6 span {
+        .product-light-first-section-div-6 span {
           display: none;
         }
 
-        .product-dark-first-section-div-4 {
+        .product-light-first-section-div-4 {
           border-bottom: none;
           padding-bottom: 0;
           flex-direction: column;
@@ -648,31 +672,33 @@
           row-gap: 10px;
         }
 
-        .product-dark-first-section-div-14 {
+        .product-light-first-section-div-14 {
           border-radius: 0;
           padding: 32px 14px 40px;
           width: calc(100% - 44px);
-          border-top: 2px dashed #686868;
-          border-bottom: 2px dashed #686868;
+          border-top: 2px dashed #ebebeb;
+          border-bottom: 2px dashed #ebebeb;
+          background-color: #ffffff;
         }
 
-        .product-dark-first-section-div-16 {
+        .product-light-first-section-div-16 {
           row-gap: 15px;
           padding-bottom: 56px;
           border-bottom: none;
         }
 
-        .product-dark-first-section-div-17 {
+        .product-light-first-section-div-17 {
           height: 12px;
           margin-top: 0;
+          background: #ebebeb;
         }
 
-        .product-dark-first-section-div-21 {
+        .product-light-first-section-div-21 {
           width: 70%;
           flex-grow: 1;
         }
 
-        .product-dark-first-section-div-20 {
+        .product-light-first-section-div-20 {
           flex-direction: row;
           column-gap: 20px;
 
@@ -680,37 +706,37 @@
           justify-content: space-between;
         }
 
-        .product-dark-first-section-div-13,
-        .product-dark-first-section-div-15,
-        .product-dark-first-section-div-7,
-        .product-dark-first-section-span-6,
-        .product-dark-first-section-img-3,
-        .product-dark-second-section-img-1 {
+        .product-light-first-section-div-13,
+        .product-light-first-section-div-15,
+        .product-light-first-section-div-7,
+        .product-light-first-section-span-6,
+        .product-light-first-section-img-3,
+        .product-light-second-section-img-1 {
           display: none;
         }
 
-        .product-dark-first-section {
+        .product-light-first-section {
           row-gap: 0;
           padding: 0;
 
-          background: #2a2a2a;
+          background: #ffffff;
           border-radius: 0;
         }
 
-        .product-dark-first-section-div-22 {
+        .product-light-first-section-div-22 {
           display: flex;
           flex-direction: column;
           align-items: center;
           row-gap: 5px;
         }
 
-        .product-dark-first-section-div-22 span {
+        .product-light-first-section-div-22 span {
           font-size: 16px;
-          color: #ffffff;
+          color: #2b2b2b;
           font-weight: 700;
         }
 
-        .product-dark-first-section-div-22 button {
+        .product-light-first-section-div-22 button {
           border: none;
           outline: none;
           padding: 4px 26px 6px;
@@ -721,26 +747,39 @@
           color: #ffffff;
         }
 
-        .product-dark-first-section-div-3 {
+        .product-light-first-section-div-3 {
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
           width: 100%;
           padding: 42px 18px 22px;
-          background: #2a2a2a;
+          background: #ffffff;
           border-radius: 12px 12px 0 0;
           margin-top: -20px;
           position: relative;
         }
 
-        .product-dark-first-section-img-4 {
+        .product-light-first-section-img-4 {
           display: block;
           position: absolute;
           top: -22px;
           right: calc(50% - 22px);
+          z-index: 3;
+          object-fit: contain;
         }
 
-        .product-dark-first-section-div-19 {
+        .product-light-first-section-img-5 {
+          display: block;
+          position: absolute;
+          width: 48px;
+          height: 48px;
+          top: -24px;
+          right: calc(50% - 24px);
+          z-index: 2;
+          object-fit: contain;
+        }
+
+        .product-light-first-section-div-19 {
           width: 100%;
         }
       }
@@ -753,11 +792,11 @@
   </head>
   <body>
     <header>
-      <img class="header-img-2" src="../../../src/assets/images/image1.png" />
+      <img class="header-img-2" src="../../../src/assets/images/image22.png" />
       <div class="header-div-1">
         <div class="header-div-3">
           <div
-            class="offcanvas offcanvas-end header-offcanvas"
+            class="offcanvas offcanvas-end header-offcanvas-light"
             tabindex="-1"
             id="offcanvasMenu"
           >
@@ -772,7 +811,7 @@
             />
             <img
               class="header-img-5"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <img
@@ -782,65 +821,101 @@
               <span class="header-span-1">میکسـرچـی</span>
             </div>
             <div class="header-div-10">
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/category.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/category.svg"
+                />
                 <span>دستـه بنـدی</span>
               </div>
-              <div class="header-div-11">
-                <img src="../../../src/assets/icons/brand.svg" />
+              <div class="header-div-11-light">
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/brand.svg"
+                />
                 <span>برنـدهـا</span>
               </div>
             </div>
             <div class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -851,6 +926,10 @@
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasMenu"
             src="../../../src/assets/icons/menu.svg"
+            style="
+              filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                brightness(95%) contrast(100%);
+            "
           />
           <img
             class="header-img-1"
@@ -859,18 +938,24 @@
           <span class="header-span-1">میکسـرچـی</span>
         </div>
         <div class="header-div-4">
-          <a href="../light/index.html" class="header-div-8">
-            <img src="../../../src/assets/icons/light.svg" />
+          <a href="../dark/index.html" class="header-div-8">
+            <img src="../../../src/assets/icons/moon.svg" />
           </a>
           <div
             class="header-div-7"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasBrandsMenu"
           >
-            <img src="../../../src/assets/icons/brand.svg" />
+            <img
+              style="
+                filter: invert(100%) sepia(100%) saturate(6%) hue-rotate(239deg)
+                  brightness(95%) contrast(100%);
+              "
+              src="../../../src/assets/icons/brand.svg"
+            />
           </div>
           <div
-            class="offcanvas offcanvas-start header-offcanvas-2"
+            class="offcanvas offcanvas-start header-offcanvas-2-light"
             tabindex="-1"
             id="offcanvasBrandsMenu"
           >
@@ -885,7 +970,7 @@
             />
             <img
               class="header-img-9"
-              src="../../../src/assets/images/image33.png"
+              src="../../../src/assets/images/image34.png"
             />
             <div class="header-div-9">
               <span class="header-span-1">Brands</span>
@@ -893,54 +978,78 @@
 
             <div style="margin-top: 100px" class="header-div-12">
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample">
+              <div class="collapse header-div-14-light" id="collapseExample">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample2"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample2">
+              <div class="collapse header-div-14-light" id="collapseExample2">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample3"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample3">
+              <div class="collapse header-div-14-light" id="collapseExample3">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
               <div
-                class="header-div-13"
+                class="header-div-13-light"
                 data-bs-toggle="collapse"
                 href="#collapseExample4"
               >
                 <div></div>
                 <span>KICHOT</span>
-                <img src="../../../src/assets/icons/arrow-down.svg" />
+                <img
+                  style="
+                    filter: invert(100%) sepia(100%) saturate(6%)
+                      hue-rotate(239deg) brightness(5%) contrast(100%);
+                  "
+                  src="../../../src/assets/icons/arrow-down.svg"
+                />
               </div>
-              <div class="collapse header-div-14" id="collapseExample4">
+              <div class="collapse header-div-14-light" id="collapseExample4">
                 <div>AW-00 mini</div>
                 <div>AW-00 mini</div>
               </div>
@@ -955,63 +1064,63 @@
       <div class="header-div-2">
         <ul class="header-ul-1">
           <li>
-            <a href="../../home/dark/index.html"> صفحه اصلی </a>
+            <a href="../../home/light/index.html"> صفحه اصلی </a>
           </li>
           <li class="active">
             <a href="./index.html"> محصولات </a>
           </li>
           <li>
-            <a href="../../category/dark/index.html"> دسته بندی ها </a>
+            <a href="../../category/light/index.html"> دسته بندی ها </a>
           </li>
         </ul>
         <ul class="header-ul-1">
           <li>
-            <a href="../../favorite/dark/index.html" href="./">
+            <a href="../../favorite/light/index.html" href="./">
               علاقه مندی ها
             </a>
           </li>
           <li>
-            <a href="../../about/dark/index.html"> درباره ما </a>
+            <a href="../../about/light/index.html"> درباره ما </a>
           </li>
           <li>
-            <a href="../../contact/dark/index.html"> تماس با ما </a>
+            <a href="../../contact/light/index.html"> تماس با ما </a>
           </li>
         </ul>
       </div>
     </header>
 
     <main>
-      <section class="product-dark-first-section">
-        <div class="product-dark-first-section-div-1">
+      <section class="product-light-first-section">
+        <div class="product-light-first-section-div-1">
           <img
             src="../../../src/assets/images/image10.png"
-            class="product-dark-first-section-img-1"
+            class="product-light-first-section-img-1"
           />
-          <div class="product-dark-first-section-div-2">
+          <div class="product-light-first-section-div-2">
             <img
               src="../../../src/assets/images/image10.png"
-              class="product-dark-first-section-img-2"
+              class="product-light-first-section-img-2"
             />
             <img
               src="../../../src/assets/images/image10.png"
-              class="product-dark-first-section-img-2"
+              class="product-light-first-section-img-2"
             />
             <img
               src="../../../src/assets/images/image10.png"
-              class="product-dark-first-section-img-2"
+              class="product-light-first-section-img-2"
             />
           </div>
         </div>
-        <div class="product-dark-first-section-div-3">
-          <div class="product-dark-first-section-div-4">
-            <span class="product-dark-first-section-span-1">
+        <div class="product-light-first-section-div-3">
+          <div class="product-light-first-section-div-4">
+            <span class="product-light-first-section-span-1">
               <span>میکسـر قنـادی</span>
-              <span class="product-dark-active">|</span>
+              <span class="product-light-active">|</span>
               <span>KICHOT</span>
             </span>
-            <div class="product-dark-first-section-div-5">
-              <img src="../../../src/assets/images/image32.png" />
-              <div class="product-dark-first-section-div-6">
+            <div class="product-light-first-section-div-5">
+              <img src="../../../src/assets/images/image35.png" />
+              <div class="product-light-first-section-div-6">
                 <span style="font-family: VazirFd"> 4.5 </span>
                 <img src="../../../src/assets/icons/star-empty.svg" />
                 <img src="../../../src/assets/icons/star.svg" />
@@ -1021,29 +1130,41 @@
               </div>
             </div>
           </div>
-          <div class="product-dark-first-section-div-7">
-            <div class="product-dark-first-section-div-8">
-              <div class="product-dark-first-section-div-10">
-                <span class="product-dark-title">
-                  <img src="../../../src/assets/icons/category.svg" />
+          <div class="product-light-first-section-div-7">
+            <div class="product-light-first-section-div-8">
+              <div class="product-light-first-section-div-10">
+                <span class="product-light-title">
+                  <img
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
+                    src="../../../src/assets/icons/category.svg"
+                  />
                   دسته بندی
                 </span>
-                <span class="product-dark-item">قنـادی</span>
-                <span class="product-dark-seperator">,</span>
-                <span class="product-dark-item">کالای برقـی</span>
+                <span class="product-light-item">قنـادی</span>
+                <span class="product-light-seperator">,</span>
+                <span class="product-light-item">کالای برقـی</span>
               </div>
-              <div class="product-dark-first-section-div-10">
-                <span class="product-dark-title">
-                  <img src="../../../src/assets/icons/medal-star.svg" />
+              <div class="product-light-first-section-div-10">
+                <span class="product-light-title">
+                  <img
+                    style="
+                      filter: invert(100%) sepia(100%) saturate(6%)
+                        hue-rotate(239deg) brightness(5%) contrast(100%);
+                    "
+                    src="../../../src/assets/icons/medal-star.svg"
+                  />
                   برند محصول
                 </span>
-                <span class="product-dark-item">کیچـوت</span>
-                <span class="product-dark-seperator">,</span>
-                <span class="product-dark-item">KICHOT</span>
+                <span class="product-light-item">کیچـوت</span>
+                <span class="product-light-seperator">,</span>
+                <span class="product-light-item">KICHOT</span>
               </div>
             </div>
-            <div class="product-dark-first-section-div-9">
-              <div class="product-dark-first-section-div-11">
+            <div class="product-light-first-section-div-9">
+              <div class="product-light-first-section-div-11">
                 <svg
                   width="22"
                   height="22"
@@ -1057,7 +1178,7 @@
                   />
                 </svg>
               </div>
-              <div class="product-dark-first-section-div-12">
+              <div class="product-light-first-section-div-12">
                 <span>
                   <span
                     style="
@@ -1082,15 +1203,15 @@
                     >5</span
                   >
                 </span>
-                <span class="product-dark-first-section-span-2"
+                <span class="product-light-first-section-span-2"
                   >از مجموع 2 امتیاز</span
                 >
               </div>
             </div>
           </div>
-          <div class="product-dark-first-section-div-13">
-            <span class="product-dark-first-section-span-3">توضیحات</span>
-            <p class="product-dark-first-section-p-1">
+          <div class="product-light-first-section-div-13">
+            <span class="product-light-first-section-span-3">توضیحات</span>
+            <p class="product-light-first-section-p-1">
               لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم اســــت ، و برای شرایط فعلی تکــنولوژی
@@ -1100,49 +1221,57 @@
               میطلبد
             </p>
           </div>
-          <div class="product-dark-first-section-div-22">
+          <div class="product-light-first-section-div-22">
             <span>ظرفیت میکسر</span>
             <button>20 لیتر</button>
           </div>
           <img
-            class="product-dark-first-section-img-4"
+            class="product-light-first-section-img-4"
             src="../../../src/assets/images/image32.png"
           />
+          <img
+            class="product-light-first-section-img-5"
+            src="../../../src/assets/images/image34.png"
+          />
         </div>
-        <div class="product-dark-first-section-div-14">
+        <div class="product-light-first-section-div-14">
           <img
             src="../../../src/assets/images/image14.png"
-            class="product-dark-first-section-img-3"
+            class="product-light-first-section-img-3"
           />
-          <div class="product-dark-first-section-div-15">
-            <span class="product-dark-first-section-span-4">ظرفیت میکسر</span>
-            <button class="product-dark-first-section-button-1">20 لیتر</button>
+          <div class="product-light-first-section-div-15">
+            <span class="product-light-first-section-span-4">ظرفیت میکسر</span>
+            <button class="product-light-first-section-button-1">
+              20 لیتر
+            </button>
           </div>
-          <div class="product-dark-first-section-div-16">
-            <span class="product-dark-first-section-span-5">محـدوده قیمـت</span>
-            <span class="product-dark-first-section-span-6"
+          <div class="product-light-first-section-div-16">
+            <span class="product-light-first-section-span-5"
+              >محـدوده قیمـت</span
+            >
+            <span class="product-light-first-section-span-6"
               >آخرین بروزرسانی 20 فروردین</span
             >
-            <div class="product-dark-first-section-div-17">
-              <div class="product-dark-first-section-div-18"></div>
+            <div class="product-light-first-section-div-17">
+              <div class="product-light-first-section-div-18"></div>
             </div>
-            <div class="product-dark-first-section-div-19">
-              <span class="product-dark-first-section-span-7 active"
+            <div class="product-light-first-section-div-19">
+              <span class="product-light-first-section-span-7 active"
                 >اقتصادی</span
               >
-              <span class="product-dark-first-section-span-7">گران</span>
-              <span class="product-dark-first-section-span-7">خیلی گران</span>
-              <span class="product-dark-first-section-span-7">فوق گران</span>
+              <span class="product-light-first-section-span-7">گران</span>
+              <span class="product-light-first-section-span-7">خیلی گران</span>
+              <span class="product-light-first-section-span-7">فوق گران</span>
             </div>
           </div>
-          <div class="product-dark-first-section-div-20">
-            <span class="product-dark-first-section-span-8">استعلام قیمت</span>
-            <div class="product-dark-first-section-div-21">
-              <button class="product-dark-first-section-button-2">
+          <div class="product-light-first-section-div-20">
+            <span class="product-light-first-section-span-8">استعلام قیمت</span>
+            <div class="product-light-first-section-div-21">
+              <button class="product-light-first-section-button-2">
                 0761 225 0913
                 <img src="../../../src/assets/icons/phone.svg" />
               </button>
-              <button class="product-dark-first-section-button-3">
+              <button class="product-light-first-section-button-3">
                 <img src="../../../src/assets/icons/whatsapp.svg" />
               </button>
             </div>
@@ -1150,17 +1279,17 @@
         </div>
       </section>
 
-      <section class="product-dark-second-section">
-        <div class="product-dark-second-section-div-1">
-          <span class="product-dark-second-section-span-1"
+      <section class="product-light-second-section">
+        <div class="product-light-second-section-div-1">
+          <span class="product-light-second-section-span-1"
             >توضیحات کلی محصول</span
           >
           <img
             src="../../../src/assets/images/image14.png"
-            class="product-dark-second-section-img-1"
+            class="product-light-second-section-img-1"
           />
         </div>
-        <p class="product-dark-second-section-p-1">
+        <p class="product-light-second-section-p-1">
           لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد
@@ -1173,44 +1302,44 @@
           کاربــردی می باشد، کتابهای زیادی در شصــت و سه درصد گذشته حال و آینده،
           شناخت فراوان جامعه
         </p>
-        <div class="product-dark-second-section-div-2">مشخصـات فنـی</div>
-        <div class="product-dark-second-section-div-3">
-          <div class="product-dark-second-section-div-4">
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">ظرفیت</span>
-              <span class="product-dark-second-section-input-1">20 لیتر</span>
+        <div class="product-light-second-section-div-2">مشخصـات فنـی</div>
+        <div class="product-light-second-section-div-3">
+          <div class="product-light-second-section-div-4">
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">ظرفیت</span>
+              <span class="product-light-second-section-input-1">20 لیتر</span>
             </div>
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">ظرفیت</span>
-              <span class="product-dark-second-section-input-1">20 لیتر</span>
-            </div>
-          </div>
-          <div class="product-dark-second-section-div-4">
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">نوع</span>
-              <span class="product-dark-second-section-input-1">میکسر</span>
-            </div>
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">نوع</span>
-              <span class="product-dark-second-section-input-1">میکسر</span>
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">ظرفیت</span>
+              <span class="product-light-second-section-input-1">20 لیتر</span>
             </div>
           </div>
-          <div class="product-dark-second-section-div-4">
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">کاربرد</span>
-              <span class="product-dark-second-section-input-1"
+          <div class="product-light-second-section-div-4">
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">نوع</span>
+              <span class="product-light-second-section-input-1">میکسر</span>
+            </div>
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">نوع</span>
+              <span class="product-light-second-section-input-1">میکسر</span>
+            </div>
+          </div>
+          <div class="product-light-second-section-div-4">
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">کاربرد</span>
+              <span class="product-light-second-section-input-1"
                 >قنادی و نانوایی</span
               >
             </div>
-            <div class="product-dark-second-section-div-5">
-              <span class="product-dark-second-section-span-2">کاربرد</span>
-              <span class="product-dark-second-section-input-1"
+            <div class="product-light-second-section-div-5">
+              <span class="product-light-second-section-span-2">کاربرد</span>
+              <span class="product-light-second-section-input-1"
                 >قنادی و نانوایی</span
               >
             </div>
           </div>
         </div>
-        <p class="product-dark-second-section-p-2">
+        <p class="product-light-second-section-p-2">
           لورم ایپسوم متن ساختـگی با تولید سادگی نامفـهوم از صـنعت چاپ، و با
           استفاده از طراحان گرافیک است، چاپـگرها و متون بلکه روزنامه و مجله در
           ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکــنولوژی مــورد

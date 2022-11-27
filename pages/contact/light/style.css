@@ -1,22 +1,22 @@
-.contact-dark-second-section {
+.contact-light-second-section {
   display: flex;
   flex-direction: column;
   row-gap: 30px;
   position: relative;
   margin: 0 65px 0;
   padding: 35px 60px 0;
-  background-color: #686868;
+  background-color: #ffffff;
   box-shadow: 0 13px 72px rgba(0, 0, 0, 0.07);
   border-radius: 23px;
 }
 
-.contact-dark-second-section-div-1 {
+.contact-light-second-section-div-1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.contact-dark-second-section-div-2 {
+.contact-light-second-section-div-2 {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
@@ -25,22 +25,22 @@
   min-width: 500px;
 }
 
-.contact-dark-second-section-div-2 .contact-dark-label {
+.contact-light-second-section-div-2 .contact-light-label {
   margin: 20px 15px 0 0;
   font-weight: 600;
   font-size: 20px;
   text-align: right;
-  color: #ffffff;
+  color: #161616;
 }
 
-.contact-dark-second-section-span-2 {
+.contact-light-second-section-span-2 {
   font-weight: 600;
   font-size: 25px;
-  color: #ffffff;
+  color: #161616;
   margin-right: 30px;
 }
 
-.contact-dark-second-section-span-1 {
+.contact-light-second-section-span-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,7 @@
   color: #ffffff;
 }
 
-.contact-dark-second-section-image-1 {
+.contact-light-second-section-image-1 {
   position: absolute;
   z-index: -100;
   bottom: -80px;
@@ -60,7 +60,7 @@
   max-height: 100%;
 }
 
-.contact-dark-second-section-button {
+.contact-light-second-section-button {
   padding: 14px 55px;
   font-family: VazirFd, serif;
   font-weight: 700;
@@ -71,7 +71,7 @@
   border-radius: 12px;
 }
 
-.contact-dark-second-section-button-2 {
+.contact-light-second-section-button-2 {
   height: 50px;
   background: #00adb5;
   color: #ffffff;
@@ -83,47 +83,47 @@
   margin-top: 20px;
 }
 
-.contact-dark-second-section-div-3 {
+.contact-light-second-section-div-3 {
   display: flex;
   justify-content: space-between;
   column-gap: 80px;
 }
 
-.contact-dark-second-section-div-4 {
+.contact-light-second-section-div-4 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   row-gap: 20px;
 }
 
-.contact-dark-second-section-div-5 {
+.contact-light-second-section-div-5 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   column-gap: 60px;
 }
 
-.contact-dark-second-section-div-5 div {
+.contact-light-second-section-div-5 div {
   display: flex;
   flex-direction: column;
   width: 370px;
 }
 
-.contact-dark-second-section-div-5 .contact-dark-title {
+.contact-light-second-section-div-5 .contact-light-title {
   font-weight: 700;
   font-size: 18px;
   color: #374957;
   margin-bottom: 10px;
 }
 
-.contact-dark-second-section-div-5 .contact-dark-caption {
+.contact-light-second-section-div-5 .contact-light-caption {
   font-weight: 500;
   font-size: 16px;
   color: #bebebe;
   white-space: nowrap;
 }
 
-.contact-dark-second-section-div-5 .contact-dark-number {
+.contact-light-second-section-div-5 .contact-light-number {
   font-family: VazirFd, serif;
   text-align: end;
   font-weight: 700;
@@ -131,29 +131,29 @@
   color: #292d32;
 }
 
-.contact-dark-second-section-div-5 .contact-dark-number span {
+.contact-light-second-section-div-5 .contact-light-number span {
   color: #7bc74d;
 }
 
-.contact-dark-second-section-div-5 img {
+.contact-light-second-section-div-5 img {
   width: 28px;
   height: 37px;
 }
 
-.contact-dark-second-section-div-6 {
+.contact-light-second-section-div-6 {
   flex-grow: 1;
   width: 100%;
   text-align: end;
 }
 
-.contact-dark-second-section-div-6 img {
+.contact-light-second-section-div-6 img {
   height: 100%;
   width: 100%;
 
   object-fit: contain;
 }
 
-.contact-dark-second-section-div-7 {
+.contact-light-second-section-div-7 {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -161,7 +161,7 @@
   flex-wrap: wrap;
 }
 
-.contact-dark-second-section-div-8 {
+.contact-light-second-section-div-8 {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -169,37 +169,37 @@
   /* max-width: 45% ; */
 }
 
-.contact-dark-second-section-div-8 .contact-dark-label {
+.contact-light-second-section-div-8 .contact-light-label {
   margin: 20px 0 0;
   font-weight: 700;
   font-size: 20px;
-  color: #ffffff;
+  color: #161616;
 }
 
-.contact-dark-second-section-div-9 {
+.contact-light-second-section-div-9 {
   padding: 14px 16px;
-  background: #515151;
+  background: #ebebeb;
   border-radius: 15px;
   display: flex;
   column-gap: 10px;
 }
 
-.contact-dark-second-section-div-9 input,
-.contact-dark-second-section-div-9 textarea {
+.contact-light-second-section-div-9 input,
+.contact-light-second-section-div-9 textarea {
   flex-grow: 1;
   border: none;
   outline: none;
-  background: #515151;
-  color: #ffffff;
+  background: #ebebeb;
+  color: #161616;
 }
 
-.contact-dark-second-section-div-10 {
+.contact-light-second-section-div-10 {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.contact-dark-second-section-div-10 span {
+.contact-light-second-section-div-10 span {
   font-weight: 500;
   font-size: 15px;
   line-height: 23px;
@@ -207,39 +207,38 @@
   color: #aaaaaa;
 }
 
-.contact-dark-second-section-div-10 .contact-dark-number-container,
-.contact-dark-second-section-div-10 .contact-dark-number-container * {
+.contact-light-second-section-div-10 .contact-light-number-container,
+.contact-light-second-section-div-10 .contact-light-number-container * {
   font-weight: 900;
   font-size: 18px;
-  color: #ffffff;
-  font-family: vazir, serif;
+  color: #161616;
 }
 
-.contact-dark-second-section-div-10 .contact-dark-number span {
+.contact-light-second-section-div-10 .contact-light-number span {
   color: #00adb5;
 }
 
-.contact-dark-second-section-div-10 img {
+.contact-light-second-section-div-10 img {
   width: 28px;
 }
 
-.contact-dark-second-section-img-1 {
+.contact-light-second-section-img-1 {
   filter: invert(51%) sepia(94%) saturate(1863%) hue-rotate(145deg)
     brightness(90%) contrast(101%);
 }
 
-.contact-dark-second-section-div-11 {
+.contact-light-second-section-div-11 {
   flex-grow: 1;
   display: flex;
   justify-content: end;
   padding-top: 80px;
 }
 
-.contact-dark-second-section-img-2 {
+.contact-light-second-section-img-2 {
   width: 100%;
 }
 
-.contact-dark-third-section {
+.contact-light-third-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -247,7 +246,7 @@
   margin: 0 65px 0;
 }
 
-.contact-dark-third-section-div-1 {
+.contact-light-third-section-div-1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,38 +255,38 @@
   row-gap: 30px;
 }
 
-.contact-dark-third-section-span-1 {
+.contact-light-third-section-span-1 {
   font-weight: 900;
   font-size: 28px;
-  color: #ffffff;
+  color: #161616;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 12px;
 }
 
-.contact-dark-third-section-span-1 span {
+.contact-light-third-section-span-1 span {
   width: 55px;
   height: 4px;
   background-color: #00adb5;
   display: block;
 }
 
-.contact-dark-third-section-span-2 {
+.contact-light-third-section-span-2 {
   font-weight: 500;
   font-size: 18px;
   color: #c4c4c4;
 }
 
-.contact-dark-third-section-div-2 {
+.contact-light-third-section-div-2 {
   width: 100%;
   display: flex;
   flex-direction: column;
   row-gap: 24px;
 }
 
-.contact-dark-third-section-div-3 {
-  background: #515151;
+.contact-light-third-section-div-3 {
+  background: #ffffff;
   box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
   border-radius: 15px;
   height: 80px;
@@ -298,54 +297,55 @@
   justify-content: space-between;
 }
 
-.contact-dark-third-section-span-3 {
+.contact-light-third-section-span-3 {
   font-weight: 700;
   font-size: 22px;
+  color: #161616;
 }
 
-.contact-dark-second-section-img-3 {
+.contact-light-second-section-img-3 {
   position: absolute;
   top: 0;
   right: 55px;
 }
 
-.contact-dark-third-section-div-4 {
+.contact-light-third-section-div-4 {
   margin-top: -40px;
-  background: #515151;
+  background: #ffffff;
   box-shadow: 0px 11px 24px rgba(0, 0, 0, 0.04);
   border-radius: 0 0 15px 15px;
   padding: 28px 62px 70px;
   font-weight: 500;
   font-size: 18px;
   line-height: 58px;
-  color: #ffffff;
+  color: #000000;
 }
 
-.contact-dark-third-section-div-4 div {
+.contact-light-third-section-div-4 div {
   height: 2px;
   width: 100%;
-  border-bottom: 2px dashed #676767;
+  border-bottom: 2px dashed #e9e9e9;
   margin-bottom: 48px;
 }
 
 @media screen and (max-width: 768px) {
-  .contact-dark-second-section-div-2 {
+  .contact-light-second-section-div-2 {
     min-width: 0;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .contact-dark-second-section-div-7 {
+  .contact-light-second-section-div-7 {
     flex-direction: column-reverse;
   }
 
-  .contact-dark-second-section {
+  .contact-light-second-section {
     row-gap: 30px;
     margin: 0 20px 0;
     padding: 35px 20px 0;
   }
 
-  .contact-dark-second-section-span-2 {
+  .contact-light-second-section-span-2 {
     border-bottom: 2px dashed #ebebeb;
     padding: 0 0 25px;
     width: 100%;
@@ -353,42 +353,42 @@
     margin: 0;
   }
 
-  .contact-dark-first-section-span-1 {
+  .contact-light-first-section-span-1 {
     font-size: 30px;
   }
 
-  .contact-dark-first-section-span-2 {
+  .contact-light-first-section-span-2 {
     font-size: 20px;
   }
 
-  .contact-dark-second-section-div-8 {
+  .contact-light-second-section-div-8 {
     padding-bottom: 20px;
   }
 
-  .contact-dark-third-section {
+  .contact-light-third-section {
     margin: 0 20px 0;
   }
 
-  .contact-dark-third-section-span-1 {
+  .contact-light-third-section-span-1 {
     font-size: 20px;
   }
 
-  .contact-dark-third-section-span-2 {
+  .contact-light-third-section-span-2 {
     display: none;
   }
 
-  .contact-dark-third-section-span-3 {
+  .contact-light-third-section-span-3 {
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
   }
 
-  .contact-dark-third-section-div-3 {
+  .contact-light-third-section-div-3 {
     padding: 16px 20px;
     height: fit-content;
   }
 
-  .contact-dark-third-section-div-4 {
+  .contact-light-third-section-div-4 {
     margin-top: -40px;
     padding: 18px 32px 40px;
     font-weight: 500;
@@ -396,11 +396,11 @@
     line-height: 30px;
   }
 
-  .contact-dark-third-section-div-4 div {
+  .contact-light-third-section-div-4 div {
     margin-bottom: 28px;
   }
 
-  .contact-dark-third-section-div-3 img {
+  .contact-light-third-section-div-3 img {
     width: 16px;
     height: 16px;
   }

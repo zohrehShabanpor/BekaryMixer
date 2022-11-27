@@ -4,8 +4,8 @@
   margin: 50px 60px 0;
   padding: 30px 80px 0 30px;
   row-gap: 30px;
-  background: #686868;
-  color: #ffffff;
+  background: #ffffff;
+  color: #161616;
   box-shadow: 0 11px 24px rgba(0, 0, 0, 0.04);
   border-radius: 18px;
   position: relative;
@@ -20,7 +20,6 @@
 .about-dark-second-section-span-1 {
   font-weight: 700;
   font-size: 32px;
-  color: #ffffff;
 }
 
 .about-dark-second-section-button-1 {
@@ -47,7 +46,7 @@
 }
 
 .about-dark-second-section-span-2 {
-  background-color: #515151;
+  background-color: #f1f1f8;
   width: 70px;
   height: 70px;
   border-radius: 18px;

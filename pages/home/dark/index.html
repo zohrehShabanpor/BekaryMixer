@@ -1,663 +1,1535 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>میکسرچی - خانه</title>
-	<style>
-		body {
-			background-color: #2A2A2A !important;
-			font-family: YekanBakh, serif !important;
-			direction: rtl;
-		}
+  <head>
+    <meta charse+t="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>میکسرچی - خانه</title>
+    <style>
+      body {
+        background-color: #2a2a2a !important;
+        font-family: YekanBakh, VazirFd, Poppins, serif !important;
+        direction: rtl;
+      }
 
-		main {
-			padding: 100px 0 65px;
-		}
+      header {
+        position: relative;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 0;
+        row-gap: 55px;
+        margin-bottom: 70px;
+      }
 
-		::-webkit-scrollbar {
-			display: none;
-		}
+      .header-img-2 {
+        position: absolute;
+        width: 100%;
+        height: 256px;
+        object-fit: fill;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
 
-		.home-dark-first-section {
-			background: linear-gradient(101deg, #444444 34%, #7D7D7D 100%);
-			border-radius: 10px;
-			height: 355px;
-			margin: 100px 65px 0;
-			position: relative;
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-		}
+      .header-div-2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-		.home-dark-first-section-span-1 {
-			font-family: SquadaOne, serif;
-			font-size: 65px;
-		}
+      .header-div-6 {
+        width: 56px;
+        height: 56px;
+        background: #00adb5;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-		.home-dark-first-section-span-2 {
-			font-family: Sarbaz, serif;
-			font-size: 45px;
-			height: 100%;
-			margin-top: -15px;
-		}
+      .header-div-7 {
+        width: 56px;
+        height: 56px;
+        background: #7d7d7d;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-		.home-dark-first-section-div-1 {
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			align-items: end;
-			height: 100%;
-			padding: 50px 80px;
-			color: white;
-		}
+      .header-div-8 {
+        width: 56px;
+        height: 56px;
+        background: linear-gradient(180deg, #ffffff 0%, #bfbfbf 100%);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.06);
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-		.home-dark-first-section-button-1 {
-			border: 0;
-			outline: 0;
-			background: linear-gradient(90deg, #00ADB5 0%, #AAD8D3 100%);
-			border-radius: 5px;
-			color: #ffffff;
-			width: 140px;
-			height: 45px;
-			flex-shrink: 0;
-		}
+      .header-div-4 {
+        display: flex;
+        column-gap: 15px;
+      }
 
-		.home-dark-first-section-img-1 {
-			margin-top: -20px;
-		}
+      .header-div-1 {
+        z-index: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-		@media screen and (max-width: 1400px) {
-		}
+      .header-input-1 {
+        border: none;
+        outline: none;
+        background: #515151;
+        color: #c1c1c1;
+        border-radius: 5px;
+        width: 316px;
+        padding: 0 25px;
+      }
 
-		@media screen and (max-width: 1200px) {
-			.home-dark-first-section {
-				height: 313px;
-			}
+      .header-input-1::placeholder {
+        color: #c1c1c1;
+      }
 
-			.home-dark-first-section-img-1 {
-				width: 325px;
-			}
+      .header-img-1 {
+        background: #ffffff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        padding: 8px;
+      }
 
-			.home-dark-first-section-span-1 {
-				font-size: 50px;
-			}
+      .header-div-3 {
+        display: flex;
+        align-items: center;
+        column-gap: 20px;
+      }
 
-			.home-dark-first-section-span-2 {
-				font-size: 35px;
-			}
-		}
+      .header-span-1 {
+        font-weight: 400;
+        font-size: 22px;
+        font-family: Sarbaz, serif;
+      }
 
-		@media screen and (max-width: 992px) {
-			.home-dark-first-section {
-				height: 300px;
-				margin: 100px 45px 0;
-			}
+      .header-ul-1 {
+        list-style: none;
+        display: flex;
+        column-gap: 30px;
+        padding: 0;
+        margin: 0;
+      }
 
-			.home-dark-first-section-img-1 {
-				width: 315px;
-			}
+      .header-ul-1 a {
+        color: #ffffff;
+        text-decoration: none;
+      }
 
-			.home-dark-first-section-span-1 {
-				font-size: 45px;
-			}
+      .header-ul-1 a:hover {
+        color: #ffffff;
+      }
 
-			.home-dark-first-section-span-2 {
-				font-size: 30px;
-				margin-top: -5px;
-			}
+      .header-ul-1 .active a {
+        color: #0cc199;
+      }
 
-			.home-dark-first-section-div-1 {
-				padding: 30px 0 30px 40px;
-			}
-		}
+      .header-img-3 {
+        display: none;
+      }
 
-		@media screen and (max-width: 768px) {
-			.home-dark-first-section {
-				height: 175px;
-				margin: 0 35px;
-			}
+      main {
+        padding: 20px 0 65px;
+      }
 
-			.home-dark-first-section-img-1 {
-				width: 200px;
-			}
+      ::-webkit-scrollbar {
+        display: none;
+      }
 
-			.home-dark-first-section-span-1 {
-				font-size: 25px;
-			}
+      .home-dark-first-section {
+        background: linear-gradient(101deg, #444444 34%, #7d7d7d 100%);
+        border-radius: 10px;
+        height: 355px;
+        margin: 100px 65px 0;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-			.home-dark-first-section-span-2 {
-				font-size: 18px;
-				margin-top: 0;
-			}
+      .home-dark-first-section-span-1 {
+        font-family: SquadaOne, serif;
+        font-size: 65px;
+      }
 
-			.home-dark-first-section-button-1 {
-				width: 80px;
-				height: 25px;
-				font-size: 11px;
-			}
-		}
+      .home-dark-first-section-span-2 {
+        font-family: Sarbaz, serif;
+        font-size: 45px;
+        height: 100%;
+        margin-top: -15px;
+      }
 
-		@media screen and (max-width: 576px) {
-			.home-dark-first-section {
-				height: 145px;
-				margin: 0 35px;
-			}
+      .home-dark-first-section-div-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        height: 100%;
+        padding: 50px 80px;
+        color: white;
+      }
 
-			.home-dark-first-section-img-1 {
-				width: 165px;
-			}
+      .home-dark-first-section-button-1 {
+        border: 0;
+        outline: 0;
+        background: linear-gradient(90deg, #00adb5 0%, #aad8d3 100%);
+        border-radius: 5px;
+        color: #ffffff;
+        width: 140px;
+        height: 45px;
+        flex-shrink: 0;
+      }
 
-			.home-dark-first-section-div-1 {
-				padding: 15px 0 15px 20px;
-			}
-		}
+      .home-dark-first-section-img-1 {
+        margin-top: -20px;
+      }
 
-		@media screen and (max-width: 480px) {
-			.home-dark-first-section {
-				height: 120px;
-				margin: 0 26px;
-			}
+      @media screen and (max-width: 1400px) {
+      }
 
-			.home-dark-first-section-img-1 {
-				width: 135px;
-			}
+      @media screen and (max-width: 1200px) {
+        .home-dark-first-section {
+          height: 313px;
+        }
 
-			.home-dark-first-section-span-1 {
-				font-size: 20px;
-			}
+        .home-dark-first-section-img-1 {
+          width: 325px;
+        }
 
-			.home-dark-first-section-span-2 {
-				font-size: 14px;
-			}
+        .home-dark-first-section-span-1 {
+          font-size: 50px;
+        }
 
-			.home-dark-first-section-button-1 {
-				width: 60px;
-				height: 20px;
-				font-size: 8px;
-			}
-		}
+        .home-dark-first-section-span-2 {
+          font-size: 35px;
+        }
+      }
 
-		@media screen and (max-width: 400px) {
-		}
+      @media screen and (max-width: 992px) {
+        header {
+          padding: 30px 30px 0;
+          row-gap: 30px;
+          margin-bottom: 100px;
+        }
 
-		@media screen and (max-width: 320px) {
-		}
-	</style>
-	<link rel="preload"
-		  href="../../../src/font/fonts.css"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-	<link rel="preload"
-		  href="style.css"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-	<link rel="preload"
-		  href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-		  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"
-		  as="style"
-		  onload="this.rel='stylesheet'"/>
-</head>
-<body>
-<main>
-	<section class="home-dark-first-section">
-		<img class="home-dark-first-section-img-1" src="../../../src/assets/images/image3.png" alt="">
-		<div class="home-dark-first-section-div-1">
-			<span class="home-dark-first-section-span-1">kitchenaid</span>
-			<span class="home-dark-first-section-span-2">میکسـر مینـی نانـوایـی</span>
-			<button class="home-dark-first-section-button-1">بیشتـر</button>
-		</div>
-	</section>
-	<section class="home-dark-second-section">
-		<div class="home-dark-second-section-div-1">دستـه بنـدی</div>
-		<div class="home-dark-second-section-div-2">
-			<div class="home-dark-second-section-div-3">میکسـر قنـادی</div>
-			<div class="home-dark-second-section-div-3 home-dark-active">میکسـر اسپیـرال</div>
-			<div class="home-dark-second-section-div-3">خمیـر گیـر</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
-			<div class="home-dark-second-section-div-4"></div>
-		</div>
-	</section>
-	<section class="home-dark-third-section">
-		<div class="home-dark-third-section-div-1">
-			<span>برند ها</span>
-			<button class="home-dark-third-section-button-1">
-				نمایش همه
-				<img class="home-dark-third-section-img-4" src="../../../src/assets/icons/arrow-down.svg" alt=""/>
-			</button>
-		</div>
-		<div class="home-dark-third-section-div-2	">
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-third-section-div-3">
-				<img class="home-dark-third-section-img-1" src="../../../src/assets/images/image4.png" alt="">
-				<span class="home-dark-third-section-span-1">KICHOT</span>
-				<span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
-				<img class="home-dark-third-section-img-2" src="../../../src/assets/images/image27.png" alt="">
-				<img class="home-dark-third-section-img-3" src="../../../src/assets/icons/eye.svg" alt="">
-			</div>
-			<div class="home-dark-second-section-div-4"></div>
-		</div>
-	</section>
-	<section class="home-dark-forth-section">
-		<div class="home-dark-forth-section-div-1">
-			<span>میکسـر قنـادی</span>
-			<button class="home-dark-forth-section-button-2">
-				نمایش همه
-				<img class="home-dark-forth-section-img-3" src="../../../src/assets/icons/arrow-down.svg" alt=""/>
-			</button>
-		</div>
-		<div class="home-dark-forth-section-div-2	">
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-second-section-div-4"></div>
-		</div>
-	</section>
-	<section class="home-dark-forth-section">
-		<div class="home-dark-forth-section-div-1">
-			<span>میکسـر قنـادی</span>
-			<button class="home-dark-forth-section-button-2">
-				نمایش همه
-				<img class="home-dark-forth-section-img-3" src="../../../src/assets/icons/arrow-down.svg" alt=""/>
-			</button>
-		</div>
-		<div class="home-dark-forth-section-div-2	">
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-second-section-div-4"></div>
-		</div>
-	</section>
-	<section class="home-dark-forth-section">
-		<div class="home-dark-forth-section-div-1">
-			<span>میکسـر قنـادی</span>
-			<button class="home-dark-forth-section-button-2">
-				نمایش همه
-				<img class="home-dark-forth-section-img-3" src="../../../src/assets/icons/arrow-down.svg" alt=""/>
-			</button>
-		</div>
-		<div class="home-dark-forth-section-div-2	">
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-forth-section-div-3">
-				<div class="home-dark-forth-section-div-4">
-					<span class="home-dark-forth-section-span-1">$$</span>
-					<span class="home-dark-forth-section-span-2">
-						<img src="../../../src/assets/icons/heart.svg" alt=""/>
-					</span>
-				</div>
-				<img class="home-dark-forth-section-img-1" src="../../../src/assets/images/image5.png" alt="">
-				<img class="home-dark-forth-section-img-2" src="../../../src/assets/images/image28.png" alt="">
-				<img class="home-dark-forth-section-img-4" src="../../../src/assets/icons/eye.svg" alt="">
-				<div class="home-dark-forth-section-div-5">
-					<span class="home-dark-forth-section-span-3">KICHOT</span>
-					<span class="home-dark-forth-section-span-4">ظرفیت</span>
-				</div>
-				<div class="home-dark-forth-section-div-6">
-					<span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
-					<button class="home-dark-forth-section-button-1">20 لیتر</button>
-				</div>
-			</div>
-			<div class="home-dark-second-section-div-4"></div>
-		</div>
-	</section>
-</main>
-<script rel="preload"
-		async
-		src="./script.js"></script>
-</body>
+        .header-img-2 {
+          height: 200px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 36px;
+          height: 36px;
+        }
+
+        .header-div-8 img,
+        .header-div-7 img,
+        .header-div-6 img {
+          width: 20px;
+          height: 20px;
+        }
+
+        .header-input-1 {
+          width: 200px;
+          padding: 0 10px;
+          font-size: 12px;
+        }
+
+        .header-ul-1 {
+          column-gap: 20px;
+          font-size: 13px;
+        }
+
+        .home-dark-first-section {
+          height: 300px;
+          margin: 100px 45px 0;
+        }
+
+        .home-dark-first-section-img-1 {
+          width: 315px;
+        }
+
+        .home-dark-first-section-span-1 {
+          font-size: 45px;
+        }
+
+        .home-dark-first-section-span-2 {
+          font-size: 30px;
+          margin-top: -5px;
+        }
+
+        .home-dark-first-section-div-1 {
+          padding: 30px 0 30px 40px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .home-dark-first-section {
+          height: 175px;
+          margin: 0 35px;
+        }
+
+        .home-dark-first-section-img-1 {
+          width: 200px;
+        }
+
+        .home-dark-first-section-span-1 {
+          font-size: 25px;
+        }
+
+        .home-dark-first-section-span-2 {
+          font-size: 18px;
+          margin-top: 0;
+        }
+
+        .home-dark-first-section-button-1 {
+          width: 80px;
+          height: 25px;
+          font-size: 11px;
+        }
+      }
+
+      @media screen and (max-width: 576px) {
+        .header-div-3 {
+          column-gap: 10px;
+        }
+
+        .header-img-1 {
+          width: 40px;
+          height: 40px;
+        }
+
+        .header-span-1 {
+          font-size: 16 px;
+        }
+
+        header {
+          padding: 30px 20px 0;
+          row-gap: 25px;
+        }
+
+        .header-img-2 {
+          height: 170px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 30px;
+          height: 30px;
+        }
+
+        .header-div-8 img,
+        .header-div-7 img,
+        .header-div-6 img {
+          width: 16px;
+          height: 16px;
+        }
+
+        .header-input-1 {
+          width: 140px;
+          padding: 0 10px;
+          font-size: 12px;
+        }
+
+        .header-div-4 {
+          column-gap: 5px;
+        }
+
+        .header-ul-1 {
+          column-gap: 15px;
+          font-size: 11px;
+        }
+
+        .home-dark-first-section {
+          height: 145px;
+          margin: 0 35px;
+        }
+
+        .home-dark-first-section-img-1 {
+          width: 165px;
+        }
+
+        .home-dark-first-section-div-1 {
+          padding: 15px 0 15px 20px;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        header {
+          padding: 20px 10px 0 30px;
+          margin-bottom: 50px;
+        }
+
+        .header-img-2 {
+          height: 120px;
+        }
+
+        .header-div-8,
+        .header-div-7,
+        .header-div-6 {
+          width: 42px;
+          height: 42px;
+        }
+
+        .header-input-1 {
+          display: none;
+        }
+
+        .header-ul-1 {
+          display: none;
+        }
+
+        .header-img-3 {
+          display: block;
+        }
+
+        .home-dark-first-section {
+          height: 120px;
+          margin: 0 26px;
+        }
+
+        .home-dark-first-section-img-1 {
+          width: 135px;
+        }
+
+        .home-dark-first-section-span-1 {
+          font-size: 20px;
+        }
+
+        .home-dark-first-section-span-2 {
+          font-size: 14px;
+        }
+
+        .home-dark-first-section-button-1 {
+          width: 60px;
+          height: 20px;
+          font-size: 8px;
+        }
+      }
+
+      @media screen and (max-width: 400px) {
+      }
+
+      @media screen and (max-width: 320px) {
+      }
+    </style>
+    <link
+      rel="preload"
+      href="../../../src/css/layout.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="../../../src/font/fonts.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="style.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <link
+      rel="preload"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <img class="header-img-2" src="../../../src/assets/images/image1.png" />
+      <div class="header-div-1">
+        <div class="header-div-3">
+          <div
+            class="offcanvas offcanvas-end header-offcanvas"
+            tabindex="-1"
+            id="offcanvasMenu"
+          >
+            <img
+              class="header-img-4"
+              src="../../../src/assets/images/image9.png"
+            />
+            <img
+              data-bs-dismiss="offcanvas"
+              class="header-img-6"
+              src="../../../src/assets/icons/close.svg"
+            />
+            <img
+              class="header-img-5"
+              src="../../../src/assets/images/image33.png"
+            />
+            <div class="header-div-9">
+              <img
+                class="header-img-1"
+                src="../../../src/assets/images/image2.png"
+              />
+              <span class="header-span-1">میکسـرچـی</span>
+            </div>
+            <div class="header-div-10">
+              <div class="header-div-11">
+                <img src="../../../src/assets/icons/category.svg" />
+                <span>دستـه بنـدی</span>
+              </div>
+              <div class="header-div-11">
+                <img src="../../../src/assets/icons/brand.svg" />
+                <span>برنـدهـا</span>
+              </div>
+            </div>
+            <div class="header-div-12">
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample2"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample2">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample3"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample3">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample4"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample4">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+            </div>
+          </div>
+          <img
+            class="header-img-3"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasMenu"
+            src="../../../src/assets/icons/menu.svg"
+          />
+          <img
+            class="header-img-1"
+            src="../../../src/assets/images/image2.png"
+          />
+          <span class="header-span-1">میکسـرچـی</span>
+        </div>
+        <div class="header-div-4">
+          <a href="../light/index.html" class="header-div-8">
+            <img src="../../../src/assets/icons/light.svg" />
+          </a>
+          <div
+            class="header-div-7"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBrandsMenu"
+          >
+            <img src="../../../src/assets/icons/brand.svg" />
+          </div>
+          <div
+            class="offcanvas offcanvas-start header-offcanvas-2"
+            tabindex="-1"
+            id="offcanvasBrandsMenu"
+          >
+            <img
+              class="header-img-7"
+              src="../../../src/assets/images/image9.png"
+            />
+            <img
+              data-bs-dismiss="offcanvas"
+              class="header-img-8"
+              src="../../../src/assets/icons/close.svg"
+            />
+            <img
+              class="header-img-9"
+              src="../../../src/assets/images/image33.png"
+            />
+            <div class="header-div-9">
+              <span class="header-span-1">Brands</span>
+            </div>
+
+            <div style="margin-top: 100px" class="header-div-12">
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample2"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample2">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample3"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample3">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+              <div
+                class="header-div-13"
+                data-bs-toggle="collapse"
+                href="#collapseExample4"
+              >
+                <div></div>
+                <span>KICHOT</span>
+                <img src="../../../src/assets/icons/arrow-down.svg" />
+              </div>
+              <div class="collapse header-div-14" id="collapseExample4">
+                <div>AW-00 mini</div>
+                <div>AW-00 mini</div>
+              </div>
+            </div>
+          </div>
+          <input class="header-input-1" placeholder="جستجو کنید..." />
+          <div class="header-div-6">
+            <img src="../../../src/assets/icons/search-normal.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="header-div-2">
+        <ul class="header-ul-1">
+          <li class="active">
+            <a href="./index.html"> صفحه اصلی </a>
+          </li>
+          <li>
+            <a href="../../product/dark/index.html"> محصولات </a>
+          </li>
+          <li>
+            <a href="../../category/dark/index.html"> دسته بندی ها </a>
+          </li>
+        </ul>
+        <ul class="header-ul-1">
+          <li>
+            <a href="../../favorite/dark/index.html" href="./">
+              علاقه مندی ها
+            </a>
+          </li>
+          <li>
+            <a href="../../about/dark/index.html"> درباره ما </a>
+          </li>
+          <li>
+            <a href="../../contact/dark/index.html"> تماس با ما </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="home-dark-first-section">
+        <img
+          class="home-dark-first-section-img-1"
+          src="../../../src/assets/images/image3.png"
+          alt=""
+        />
+        <div class="home-dark-first-section-div-1">
+          <span class="home-dark-first-section-span-1">kitchenaid</span>
+          <span class="home-dark-first-section-span-2"
+            >میکسـر مینـی نانـوایـی</span
+          >
+          <button class="home-dark-first-section-button-1">بیشتـر</button>
+        </div>
+      </section>
+      <section class="home-dark-second-section">
+        <div class="home-dark-second-section-div-1">دستـه بنـدی</div>
+        <div class="home-dark-second-section-div-2">
+          <div class="home-dark-second-section-div-3">میکسـر قنـادی</div>
+          <div class="home-dark-second-section-div-3 home-dark-active">
+            میکسـر اسپیـرال
+          </div>
+          <div class="home-dark-second-section-div-3">خمیـر گیـر</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-3">میکسـر نانوایـی</div>
+          <div class="home-dark-second-section-div-4"></div>
+        </div>
+      </section>
+      <section class="home-dark-third-section">
+        <div class="home-dark-third-section-div-1">
+          <span>برند ها</span>
+          <button class="home-dark-third-section-button-1">
+            نمایش همه
+            <img
+              class="home-dark-third-section-img-4"
+              src="../../../src/assets/icons/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="home-dark-third-section-div-2">
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-third-section-div-3">
+            <img
+              class="home-dark-third-section-img-1"
+              src="../../../src/assets/images/image4.png"
+              alt=""
+            />
+            <span class="home-dark-third-section-span-1">KICHOT</span>
+            <span class="home-dark-third-section-span-2">میکسـر قنـادی</span>
+            <img
+              class="home-dark-third-section-img-2"
+              src="../../../src/assets/images/image27.png"
+              alt=""
+            />
+            <img
+              class="home-dark-third-section-img-3"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+          </div>
+          <div class="home-dark-second-section-div-4"></div>
+        </div>
+      </section>
+      <section class="home-dark-forth-section">
+        <div class="home-dark-forth-section-div-1">
+          <span>میکسـر قنـادی</span>
+          <button class="home-dark-forth-section-button-2">
+            نمایش همه
+            <img
+              class="home-dark-forth-section-img-3"
+              src="../../../src/assets/icons/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="home-dark-forth-section-div-2">
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-second-section-div-4"></div>
+        </div>
+      </section>
+      <section class="home-dark-forth-section">
+        <div class="home-dark-forth-section-div-1">
+          <span>میکسـر قنـادی</span>
+          <button class="home-dark-forth-section-button-2">
+            نمایش همه
+            <img
+              class="home-dark-forth-section-img-3"
+              src="../../../src/assets/icons/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="home-dark-forth-section-div-2">
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-second-section-div-4"></div>
+        </div>
+      </section>
+      <section class="home-dark-forth-section">
+        <div class="home-dark-forth-section-div-1">
+          <span>میکسـر قنـادی</span>
+          <button class="home-dark-forth-section-button-2">
+            نمایش همه
+            <img
+              class="home-dark-forth-section-img-3"
+              src="../../../src/assets/icons/arrow-down.svg"
+              alt=""
+            />
+          </button>
+        </div>
+        <div class="home-dark-forth-section-div-2">
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-forth-section-div-3">
+            <div class="home-dark-forth-section-div-4">
+              <span class="home-dark-forth-section-span-1">$$</span>
+              <span class="home-dark-forth-section-span-2">
+                <img src="../../../src/assets/icons/heart.svg" alt="" />
+              </span>
+            </div>
+            <img
+              class="home-dark-forth-section-img-1"
+              src="../../../src/assets/images/image5.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-2"
+              src="../../../src/assets/images/image28.png"
+              alt=""
+            />
+            <img
+              class="home-dark-forth-section-img-4"
+              src="../../../src/assets/icons/eye.svg"
+              alt=""
+            />
+            <div class="home-dark-forth-section-div-5">
+              <span class="home-dark-forth-section-span-3">KICHOT</span>
+              <span class="home-dark-forth-section-span-4">ظرفیت</span>
+            </div>
+            <div class="home-dark-forth-section-div-6">
+              <span class="home-dark-forth-section-span-5">میکسـر قنـادی</span>
+              <button class="home-dark-forth-section-button-1">20 لیتر</button>
+            </div>
+          </div>
+          <div class="home-dark-second-section-div-4"></div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container-3">
+        <div class="footer-container-4">
+          <div class="footer-container-5">
+            <img
+              class="footer-image-1"
+              src="../../../src/assets/images/image2.png"
+              alt=""
+            />
+            <div class="footer-container-6">
+              <span class="footer-title-2">میکسـرچـی</span>
+              <span class="footer-title-3">
+                بزرگترین شرکت صنایع دستی در خاورمیانه
+              </span>
+            </div>
+          </div>
+          <div class="footer-container-7">
+            <span class="footer-span-1">
+              شیراز بعد از پل صنایع، شهرک باهنر کوچه 32 فروشگاه بزرگ مینا هنر
+            </span>
+            <span class="footer-span-2">
+              تلفن تماس
+              <span dir="auto" class="footer-span-3">
+                0713 421 2233 - 0917 123 4566
+              </span>
+            </span>
+          </div>
+        </div>
+        <div class="footer-line-1"></div>
+        <div class="footer-container-8">
+          <div class="footer-container-9">
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> دسترسی سریع </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+            <div class="footer-item-2-container-1">
+              <span class="footer-item-2-title"> پرسش و پاسخ </span>
+              <ul class="footer-item-2-ul">
+                <li class="footer-item-2-li">تماس با ما</li>
+                <li class="footer-item-2-li">راهنمای خرید</li>
+                <li class="footer-item-2-li">پیگیری سفارش</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-line-1"></div>
+          <div class="footer-container-10">
+            <span class="footer-title-4">مجوز ها</span>
+            <span class="footer-span-4">نماد اعتماد و مجوز صنعت معدن</span>
+            <img
+              class="footer-image-2"
+              src="../../../src/assets/images/image6.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../../src/assets/images/image7.png"
+              alt=""
+            />
+            <img
+              class="footer-image-2"
+              src="../../../src/assets/images/image8.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="footer-container-11">
+        تمام حقوق متعلق به شرکت میکسرچی میباشد
+      </div>
+    </footer>
+  </body>
 </html>
