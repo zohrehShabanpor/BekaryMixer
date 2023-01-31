@@ -1,3 +1,5 @@
+/** @format */
+
 .home-dark-second-section {
   display: flex;
   flex-direction: column;
@@ -83,6 +85,7 @@
 }
 
 .home-dark-third-section-div-3 {
+  text-decoration: none;
   flex-shrink: 0;
   width: 320px;
   height: 418px;
