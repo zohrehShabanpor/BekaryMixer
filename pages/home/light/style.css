@@ -31,8 +31,14 @@
   color: #090909;
   font-weight: 600;
   font-size: 18px;
+  text-decoration: none;
 }
-
+.home-light-second-section-div-3:hover {
+  color: #090909 !important;
+}
+.home-light-second-section-div-3 + .home-light-active:hover {
+  color: #ffffff !important;
+}
 .home-light-second-section-div-3 + .home-light-active {
   background-color: #00adb5;
   color: #ffffff;
@@ -90,6 +96,7 @@
   background-color: #bfbfbf;
   border-radius: 15px;
   margin-top: 170px;
+  text-decoration: none;
   position: relative;
   display: flex;
   align-items: center;
@@ -175,6 +182,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.home-light-forth-section-div-3 {
+  text-decoration: none !important;
 }
 
 .home-light-forth-section-div-4 {

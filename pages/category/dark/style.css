@@ -31,6 +31,11 @@
   color: white;
   font-weight: 600;
   font-size: 18px;
+  text-decoration: none;
+}
+
+.category-dark-second-section-div-3:hover {
+  color: white;
 }
 
 .category-dark-second-section-div-3 + .active {
@@ -444,6 +449,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .category-dark-fifth-section-span-1 {

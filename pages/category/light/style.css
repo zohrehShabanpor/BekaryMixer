@@ -31,6 +31,13 @@
   color: #090909;
   font-weight: 600;
   font-size: 18px;
+  text-decoration: none;
+}
+.category-light-second-section-div-3:hover {
+  color: #090909 !important;
+}
+.category-light-second-section-div-3 + .active:hover {
+  color: #ffffff !important;
 }
 
 .category-light-second-section-div-3 + .active {
@@ -447,6 +454,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .category-light-fifth-section-span-1 {
